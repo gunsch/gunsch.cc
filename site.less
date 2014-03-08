@@ -13,7 +13,7 @@ body {
 
 @fade_animation_time: 0.274s;
 @slide_animation_time: 0.74s;
-@grid_icon_size: 60px;
+@grid_icon_size: 64px;
 @grid_size: (@grid_icon_size + 10px);
 
 .icons-layout-main() {
@@ -50,12 +50,13 @@ body {
   }
 
   .icons {
-    position: absolute;
-    top: 0;
-    left: 0;
     bottom: 0;
-    right: 0;
+    left: 0;
     margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
 
     width: (@grid_size * 3);
     height: (@grid_size * 2);
@@ -77,11 +78,14 @@ body {
 }
 
 .about {
+  z-index:1;
+
   hr {
     border: none;
     background: gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
     height: 1px;
+    width: 300px;
   }
 
   .about-main;

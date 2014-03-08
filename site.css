@@ -30,14 +30,15 @@ body {
   color: #333;
 }
 .content .icons {
-  position: absolute;
-  top: 0;
-  left: 0;
   bottom: 0;
-  right: 0;
+  left: 0;
   margin: auto;
-  width: 210px;
-  height: 140px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 222px;
+  height: 148px;
   transition: top 0.74s ease-in-out, left 0.74s ease-in-out;
   left: 0px;
   top: 0px;
@@ -45,12 +46,13 @@ body {
 .content .icons .icon {
   cursor: pointer;
   display: inline-block;
-  height: 60px;
+  height: 64px;
   position: absolute;
   transition: top 0.74s ease-in-out, left 0.74s ease-in-out;
-  width: 60px;
+  width: 64px;
 }
 .about {
+  z-index: 1;
   visibility: hidden;
   opacity: 0;
   text-align: left;
@@ -60,6 +62,7 @@ body {
   background: gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#ffffff));
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#ffffff));
   height: 1px;
+  width: 300px;
 }
 .about .about-text {
   padding-left: 75px;
@@ -207,7 +210,7 @@ body {
 /** Calculate locations for each icon **/
 /* collapsed: stationary/grid */
 .content:not(.opened) .icon:nth-child(1) {
-  left: 70px;
+  left: 74px;
   top: 0px;
 }
 /* Left: stacked */
@@ -217,13 +220,13 @@ body {
 }
 /* collapsed: stationary/grid */
 .content:not(.opened) .icon:nth-child(2) {
-  left: 140px;
+  left: 148px;
   top: 0px;
 }
 /* Left: stacked */
 .content.opened .icon:nth-child(2) {
   left: 0;
-  top: 70px;
+  top: 74px;
 }
 /* collapsed: stationary/grid */
 .content:not(.opened) .icon:nth-child(3) {
@@ -233,35 +236,35 @@ body {
 /* Left: stacked */
 .content.opened .icon:nth-child(3) {
   left: 0;
-  top: 140px;
+  top: 148px;
 }
 /* collapsed: stationary/grid */
 .content:not(.opened) .icon:nth-child(4) {
-  left: 70px;
-  top: 70px;
+  left: 74px;
+  top: 74px;
 }
 /* Left: stacked */
 .content.opened .icon:nth-child(4) {
   left: 0;
-  top: 210px;
+  top: 222px;
 }
 /* collapsed: stationary/grid */
 .content:not(.opened) .icon:nth-child(5) {
-  left: 140px;
-  top: 70px;
+  left: 148px;
+  top: 74px;
 }
 /* Left: stacked */
 .content.opened .icon:nth-child(5) {
   left: 0;
-  top: 280px;
+  top: 296px;
 }
 /* collapsed: stationary/grid */
 .content:not(.opened) .icon:nth-child(6) {
   left: 0px;
-  top: 70px;
+  top: 74px;
 }
 /* Left: stacked */
 .content.opened .icon:nth-child(6) {
   left: 0;
-  top: 350px;
+  top: 370px;
 }
