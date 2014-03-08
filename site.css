@@ -7,16 +7,18 @@ body {
   src: url("font/ClearSans-Thin.woff") format('woff');
 }
 /** Animation settings **/
-.content {
+.container {
   bottom: 0;
   height: 220px;
   left: 0;
   margin: auto;
   position: absolute;
   right: 0;
-  text-align: center;
-  top: 0;
+  top: -200px;
   width: 500px;
+}
+.content {
+  text-align: center;
 }
 .content .title {
   color: #666;
@@ -48,9 +50,34 @@ body {
   transition: top 0.74s ease-in-out, left 0.74s ease-in-out;
   width: 60px;
 }
+.about {
+  visibility: hidden;
+  opacity: 0;
+  text-align: left;
+}
+.about hr {
+  border: none;
+  background: gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#ffffff));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#ffffff));
+  height: 1px;
+}
+.about .about-text {
+  padding-left: 75px;
+}
+.about .photo {
+  border: 1px solid #efefef;
+  float: right;
+  width: 140px;
+}
 .content.collapsed .icons {
   left: 0px;
   top: 0px;
+}
+.content.collapsed .about {
+  animation: textFadeOut 0.74s ease-in-out;
+  -webkit-animation: textFadeOut 0.74s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
 }
 .content.opened .icons {
   left: -300px;
@@ -58,6 +85,60 @@ body {
 }
 .content.opened .title {
   margin-top: -50px;
+}
+.content.opened .about {
+  animation: textFadeIn 1.014s ease-in-out;
+  -webkit-animation: textFadeIn 1.014s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+@-webkit-keyframes textFadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  40% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes textFadeOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes textFadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  40% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes textFadeOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 /** Images for each icon **/
 .icon-facebook {
