@@ -1,55 +1,49 @@
 /** Main body **/
 body {
   font-family: "Clear Sans";
+  height: 100%;
 }
 @font-face {
   font-family: "Clear Sans";
   src: url("font/ClearSans-Thin.woff") format('woff');
 }
-/** Animation settings **/
 .container {
-  bottom: 0;
-  height: 220px;
-  left: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 300px;
   margin: auto;
   position: absolute;
+  top: 0;
+  bottom: 0;
   right: 0;
-  top: -200px;
-  width: 500px;
+  left: 0;
+  width: 600px;
 }
-.content {
-  text-align: center;
-}
-.content .title {
+.container .title {
   color: #666;
   cursor: pointer;
   font-size: 24px;
-  transition: margin-top 0.74s ease-in-out;
+  min-height: 32px;
 }
-.content .title:hover {
+.container .title:hover {
   color: #333;
 }
-.content .icons {
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 2;
-  width: 222px;
-  height: 148px;
-  transition: top 0.74s ease-in-out, left 0.74s ease-in-out;
-  left: 0px;
-  top: 0px;
+.container .content {
+  display: flex;
+  flex-direction: row;
 }
-.content .icons .icon {
+.container .content .icons {
+  display: flex;
+  flex-direction: column;
+}
+.container .content .icons .icon {
   cursor: pointer;
   display: inline-block;
-  height: 64px;
-  position: absolute;
-  transition: top 0.74s ease-in-out, left 0.74s ease-in-out;
-  width: 64px;
+  margin-bottom: 10px;
+  min-height: 64px;
+  min-width: 64px;
+  max-height: 64px;
 }
 .about {
   z-index: 1;
@@ -65,83 +59,17 @@ body {
   width: 300px;
 }
 .about .about-text {
-  padding-left: 75px;
+  padding-left: 20px;
 }
 .about .photo {
   border: 1px solid #efefef;
   float: right;
+  margin-left: 20px;
   width: 140px;
 }
-.content.collapsed .icons {
-  left: 0px;
-  top: 0px;
-}
-.content.collapsed .about {
-  animation: textFadeOut 0.74s ease-in-out;
-  -webkit-animation: textFadeOut 0.74s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-}
-.content.opened .icons {
-  left: -300px;
-  top: -100px;
-}
-.content.opened .title {
-  margin-top: -50px;
-}
-.content.opened .about {
-  animation: textFadeIn 1.014s ease-in-out;
-  -webkit-animation: textFadeIn 1.014s ease-in-out;
+.content .about {
   visibility: visible;
   opacity: 1;
-}
-@-webkit-keyframes textFadeIn {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  40% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes textFadeOut {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-@keyframes textFadeIn {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  40% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-@keyframes textFadeOut {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
 }
 /** Images for each icon **/
 .icon-facebook {
@@ -206,65 +134,4 @@ body {
 }
 .icon-twitter:hover {
   box-shadow: 0 0 2px #87deff;
-}
-/** Calculate locations for each icon **/
-/* collapsed: stationary/grid */
-.content:not(.opened) .icon:nth-child(1) {
-  left: 74px;
-  top: 0px;
-}
-/* Left: stacked */
-.content.opened .icon:nth-child(1) {
-  left: 0;
-  top: 0px;
-}
-/* collapsed: stationary/grid */
-.content:not(.opened) .icon:nth-child(2) {
-  left: 148px;
-  top: 0px;
-}
-/* Left: stacked */
-.content.opened .icon:nth-child(2) {
-  left: 0;
-  top: 74px;
-}
-/* collapsed: stationary/grid */
-.content:not(.opened) .icon:nth-child(3) {
-  left: 0px;
-  top: 0px;
-}
-/* Left: stacked */
-.content.opened .icon:nth-child(3) {
-  left: 0;
-  top: 148px;
-}
-/* collapsed: stationary/grid */
-.content:not(.opened) .icon:nth-child(4) {
-  left: 74px;
-  top: 74px;
-}
-/* Left: stacked */
-.content.opened .icon:nth-child(4) {
-  left: 0;
-  top: 222px;
-}
-/* collapsed: stationary/grid */
-.content:not(.opened) .icon:nth-child(5) {
-  left: 148px;
-  top: 74px;
-}
-/* Left: stacked */
-.content.opened .icon:nth-child(5) {
-  left: 0;
-  top: 296px;
-}
-/* collapsed: stationary/grid */
-.content:not(.opened) .icon:nth-child(6) {
-  left: 0px;
-  top: 74px;
-}
-/* Left: stacked */
-.content.opened .icon:nth-child(6) {
-  left: 0;
-  top: 370px;
 }

@@ -3,26 +3,6 @@
 <head>
   <title>Jesse Gunsch : j@qxlp</title>
   <meta charset="UTF-8">
-
-  <script type="text/javascript">
-    window.addEventListener('load', function() {
-      var isCollapsed = true;
-      var contentEl = document.getElementsByClassName('content')[0];
-      document.getElementsByClassName('title')[0].addEventListener('click',
-          function() {
-        isCollapsed = !isCollapsed;
-        contentEl.classList.toggle('collapsed', isCollapsed);
-        contentEl.classList.toggle('opened', !isCollapsed);
-      });
-    });
-  </script>
-
-  <!-- Lazy dev spotted. -->
-<!--
-  <link rel="stylesheet/less" type="text/css" href="site.less" />
-  <script type="text/javascript">less = { env: 'development' };</script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.6.3/less.min.js"></script>
--->
   <link rel="stylesheet" type="text/css" href="site.css"></link>
 
   <!--
@@ -30,17 +10,17 @@
 replace tumblr with something, don't dupe goodreads
     1) Embedded web fonts
     2) Inline everything?
-    3) Compile LESS before production
-    4) Serve assets cookieless and cached from assets.qxlp.net?
+    3) Serve assets cookieless and cached from assets.qxlp.net?
        (something similar to uptmp maybe)
-    5) not just -webkit
+    4) Effect with the image
+    5) Medium icon
   -->
 </head>
 
 <body>
   <div class="container">
+    <div class="title">Jesse Gunsch</div>
     <div class="content">
-      <div class="title">Jesse Gunsch</div>
       <div class="icons">
         <a target="_blank" href="http://github.com/gunsch"
             class="icon icon-github" title="Github"></a>
@@ -59,11 +39,17 @@ replace tumblr with something, don't dupe goodreads
         <hr/>
         <img class="photo" title="Jesse wearing hats" src="icon/jesse.jpg" />
         <div class="about-text">
-          <p>[Inspirational quote here]</p>
-          <p>I write software. I read books. Sometimes I watch college basketball.</p>
-          <p>I currently work for Google.</p>
-          <p>Things I am proud of include:</p>
+          <p>Hi! You've found my website.</p>
+          <p>If you like book reviews, <a href="https://medium.com/@gunsch">I write some of those</a>.</p>
+          <p>If you're interested in my code, check out:
+            <ul>
+              <li><a href="https://codereview.chromium.org/search?closed=2&amp;owner=gunsch%40chromium.org&amp;reviewer=&amp;cc=&amp;repo_guid=&amp;base=&amp;project=&amp;private=1&amp;commit=1&amp;created_before=&amp;created_after=&amp;modified_before=&amp;modified_after=&amp;order=&amp;format=html&amp;keys_only=False&amp;with_messages=False&amp;cursor=&amp;limit=30">Chromium</a> (src/chromecast/)</li>
+              <li><a href="https://github.com/gunsch">GitHub</a> (gunsch)</li>
+            </ul>
+          </p>
+          <p>Other things I have done include:</p>
           <ul>
+            <li>Running reddit's <a href="http://brackets.qxlp.net/">college basketball brackets challenge</a> (<a href="https://github.com/gunsch/brackets">github</a>)</li>
             <li>Building <a target="_blank" href="http://whichclasses.com">WhichClasses.com</a></li>
             <li>Teaching <a target="_blank" href="http://qxlp.net/cs337">CSC 337</a></li>
           </ul>
