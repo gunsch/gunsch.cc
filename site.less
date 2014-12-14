@@ -24,7 +24,7 @@ body {
   .title {
     color: #666;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 24pt;
     min-height: 32px;
     &:hover { color: #333; }
   }
@@ -45,7 +45,7 @@ body {
       /* Children should be flexbox as well */
       display: flex;
       flex-direction: row;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
 
       .icon {
         cursor: pointer;
@@ -75,13 +75,13 @@ body {
   text-align: left;
 
   .about-text {
-    padding-left: 2 * @grid_padding;
+    padding-left: @grid_padding;
   }
 
   .photo {
     border: 1px solid #efefef;
     float: right;
-    margin-left: 2 * @grid_padding;
+    margin-left: @grid_padding;
     width: 140px;
   }
 }

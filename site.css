@@ -16,7 +16,7 @@ body {
 .container .title {
   color: #666;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 24pt;
   min-height: 32px;
 }
 .container .title:hover {
@@ -60,12 +60,12 @@ body {
   width: 300px;
 }
 .about .about-text {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .about .photo {
   border: 1px solid #efefef;
   float: right;
-  margin-left: 20px;
+  margin-left: 10px;
   width: 140px;
 }
 .content .about {
