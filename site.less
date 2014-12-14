@@ -31,15 +31,26 @@ body {
 
   .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    .about {
+      order: 1;
+    }
+
     .icons {
+      margin-top: @grid_padding;
+      /* Order within parent */
+      order: 2;
+
+      /* Children should be flexbox as well */
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap:wrap;
 
       .icon {
         cursor: pointer;
         display: inline-block;
-        margin-bottom: @grid_padding;
+        margin: 0 0 @grid_padding @grid_padding;
         min-height: @grid_icon_size;
         max-height: @grid_icon_size;
         min-width: @grid_icon_size;
