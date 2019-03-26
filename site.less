@@ -1,9 +1,14 @@
 /** Main body **/
 
 body {
+  color: #333;
   display: flex;
   font-family: "Clear Sans";
   justify-content: center;
+}
+
+a {
+  color: #000;
 }
 
 @font-face {
@@ -16,73 +21,59 @@ body {
 @grid_size: (@grid_icon_size + @grid_padding);
 @num_icons: 6;
 
+.inline-icon {
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 14px;
+}
+
 .container {
+  background-color: #fff0ff;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  margin-top: 16px;
+  max-width: 800px;
+  padding: 4px 16px 16px 16px;
 
   .title {
     color: #666;
     cursor: pointer;
     font-size: 24pt;
+    margin-bottom: 16px;
     min-height: 32px;
+    text-align: center;
     &:hover { color: #333; }
+  }
+
+  .section {
+    color: #666;
+    font-size: 20pt;
   }
 
   .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    .about {
-      order: 1;
+    .photo {
+      border: 8px solid #fff;
+      border-radius: 16px;
+      margin-left: @grid_padding;
+      width: 270px;
+    }
+    
+    .photo-caption {
+      text-align: center;
+      font-size: 10pt;
     }
 
-    .icons {
-      margin-top: @grid_padding;
-      /* Order within parent */
-      order: 2;
-
-      /* Children should be flexbox as well */
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-      .icon {
-        cursor: pointer;
-        display: inline-block;
-        margin: 0 0 @grid_padding @grid_padding;
-        min-height: @grid_icon_size;
-        max-height: @grid_icon_size;
-        min-width: @grid_icon_size;
-        max-height: @grid_icon_size;
-      }
+    .text-container {
+      max-width: 500px;
     }
-  }
-}
 
-.about {
-  z-index:1;
-
-  hr {
-    border: none;
-    background: gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
-    height: 1px;
-    width: 300px;
-  }
-
-  .about-main;
-  text-align: left;
-
-  .about-text {
-    padding-left: @grid_padding;
-  }
-
-  .photo {
-    border: 1px solid #efefef;
-    float: right;
-    margin-left: @grid_padding;
-    width: 140px;
   }
 }
 
@@ -90,33 +81,9 @@ p + ul {
   margin-top: -1em;
 }
 
-.about-main() {
-  visibility: hidden;
-  opacity: 0;
+hr {
+  border: none;
+  background: gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
+  height: 1px;
 }
-
-.content .about {
-  visibility: visible;
-  opacity: 1;
-}
-
-/** Images for each icon **/
-.icon-img(@name, @color, @icon_link) {
-  .icon-@{name} {
-    background-color: @color;
-    background-image: data-uri(@icon_link);
-    &:hover {
-      box-shadow: 0 0 2px lighten(@color, 30%);
-    }
-  }
-}
-/*.icon-img(facebook, #3B5998, 'icon/facebook.png');*/
-.icon-img(github, #202021, 'icon/github.png'); // #4183C4
-/*.icon-img(gmail, #DD4B39, 'icon/gmail.png');*/
-.icon-img(goodreads, #5A471B, 'icon/goodreads.png');
-.icon-img(linkedin, #007FB1, 'icon/linkedin.png');
-.icon-img(medium, #030303, 'icon/medium.png');
-.icon-img(plus, #D14836, 'icon/plus.png');
-/*.icon-img(rss, #007FB1, 'icon/rss.png');*/
-/*.icon-img(tumblr, #2C4762, 'icon/tumblr.png');*/
-.icon-img(twitter, #00ACED, 'icon/twitter.png');
