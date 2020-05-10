@@ -1,6 +1,10 @@
 FROM nginx:alpine
+
+# Development support
 RUN apk add bash
-#COPY default.conf /etc/nginx/conf.d/default.conf
-#COPY index.html /usr/share/nginx/html/index.html
-#COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+
+# Set up site
+COPY out /srv/public_html
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+
 RUN nginx
