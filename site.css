@@ -2,15 +2,39 @@
 body {
   color: #333;
   display: flex;
-  font-family: "Clear Sans";
+  font-family: "Catamaran";
   justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  body {
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .stripe-wrapper {
+    margin-top: 8px;
+  }
+}
+.stripe-wrapper {
+  background: repeating-linear-gradient(135deg, #d62770, #d62770 100px, #ffc60d 100px, #ffc60d 200px, #176de6 200px, #176de6 300px);
+}
+.wrapper {
+  /* Visually this creates a 16px striped border all the way around, but
+     there seems to be an unexplained extra 4px at the top. */
+  padding: 12px 16px 16px 16px;
 }
 a {
   color: #000;
 }
 @font-face {
-  font-family: "Clear Sans";
-  src: url("font/ClearSans-Thin.woff") format('woff');
+  font-family: "Catamaran";
+  font-weight: 400;
+  src: url("font/catamaran-v6-latin-regular.woff") format('woff');
+}
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 800;
+  src: url("font/catamaran-v6-latin-800.woff") format('woff');
 }
 .inline-icon {
   height: 14px;
@@ -19,28 +43,37 @@ a {
   width: 14px;
 }
 .container {
-  background-color: #fff0ff;
-  border-radius: 16px;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  margin-top: 4px;
-  max-width: 800px;
-  padding: 4px 16px 16px 16px;
+  margin: 4px auto 0 auto;
+  padding: 8px 20px 20px 20px;
 }
 .container .title {
-  color: #666;
   cursor: pointer;
-  font-size: 24pt;
-  margin-bottom: 16px;
+  font-size: 28pt;
+  font-weight: 800;
+  margin-bottom: 8px;
   min-height: 32px;
   text-align: center;
 }
 .container .title:hover {
   color: #333;
 }
-.container .section {
-  color: #666;
+.container .section:nth-child(1) .section-title {
+  background-color: #d62770;
+}
+.container .section:nth-child(2) .section-title {
+  background-color: #ffc60d;
+}
+.container .section:nth-child(3) .section-title {
+  background-color: #176de6;
+}
+.container .section-title {
+  color: #fff;
   font-size: 20pt;
+  font-weight: 800;
+  padding: 2px 8px;
 }
 .container .content {
   display: flex;

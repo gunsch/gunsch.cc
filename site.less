@@ -1,10 +1,48 @@
 /** Main body **/
 
+@theme_pink: #d62770;
+@theme_yellow: #ffc60d;
+@theme_blue: #176de6;
+@theme_black: #000;
+@theme_white: #fff;
+
 body {
   color: #333;
   display: flex;
-  font-family: "Clear Sans";
+  font-family: "Catamaran";    
   justify-content: center;
+}
+
+@media screen and (max-width: 900px) { 
+  body {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 900px) { 
+  .stripe-wrapper {
+    margin-top: 8px;
+  }
+}
+
+.stripe-wrapper {
+  @stripe_width: 100px;
+
+  background: repeating-linear-gradient(
+    135deg,
+    @theme_pink,
+    @theme_pink @stripe_width,
+    @theme_yellow @stripe_width,
+    @theme_yellow @stripe_width * 2,
+    @theme_blue @stripe_width * 2,
+    @theme_blue @stripe_width * 3,
+  );
+}
+
+.wrapper {
+  /* Visually this creates a 16px striped border all the way around, but
+     there seems to be an unexplained extra 4px at the top. */
+  padding: 12px 16px 16px 16px;
 }
 
 a {
@@ -12,9 +50,17 @@ a {
 }
 
 @font-face {
-    font-family: "Clear Sans";
-    src: url("font/ClearSans-Thin.woff") format('woff');
+  font-family: "Catamaran";
+  font-weight: 400;
+  src: url("font/catamaran-v6-latin-regular.woff") format('woff');
 }
+
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 800;
+  src: url("font/catamaran-v6-latin-800.woff") format('woff');
+}
+
 
 @grid_icon_size: 64px;
 @grid_padding: 10px;
@@ -29,27 +75,31 @@ a {
 }
 
 .container {
-  background-color: #fff0ff;
-  border-radius: 16px;
+  background-color: @theme_white;
   display: flex;
   flex-direction: column;
-  margin-top: 4px;
-  max-width: 800px;
-  padding: 4px 16px 16px 16px;
+  margin: 4px auto 0 auto;
+  padding: 8px 20px 20px 20px;
 
   .title {
-    color: #666;
     cursor: pointer;
-    font-size: 24pt;
-    margin-bottom: 16px;
+    font-size: 28pt;
+    font-weight: 800;
+    margin-bottom: 8px;
     min-height: 32px;
     text-align: center;
     &:hover { color: #333; }
   }
 
-  .section {
-    color: #666;
+  .section:nth-child(1) .section-title { background-color: @theme_pink; }
+  .section:nth-child(2) .section-title { background-color: @theme_yellow; }
+  .section:nth-child(3) .section-title { background-color: @theme_blue; }
+
+  .section-title {
+    color: #fff;
     font-size: 20pt;
+    font-weight: 800;
+    padding: 2px 8px;
   }
 
   .content {
