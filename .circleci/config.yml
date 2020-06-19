@@ -6,6 +6,9 @@ jobs:
    machine: true
    steps:
      - checkout
+     - node/install:
+         node-version: latest
+     - run: node --version
      - node/install-packages
      - run: ./build.sh
 
