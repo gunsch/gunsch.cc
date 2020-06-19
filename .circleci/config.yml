@@ -6,12 +6,19 @@ jobs:
    machine: true
    steps:
      - checkout
+
+     # Install latest node and verify the version
      - node/install:
          node-version: latest
      - run: node --version
+
+     # Install packages (`npm ci` under the hood)
      - node/install-packages
+
+     # Do the actual build!
      - run: ./build.sh
 
+     # Use GitHub PAT to auth to GitHub Packages, then tag and push!
      - run: |
          echo "$GITHUB_TOKEN" | docker login https://docker.pkg.github.com --username gunsch --password-stdin
          TAG=0.1.$CIRCLE_BUILD_NUM
