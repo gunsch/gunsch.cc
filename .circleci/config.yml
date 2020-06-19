@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@3.0.0
+  node: circleci/node@latest
 jobs:
  build:
    machine: true
@@ -9,9 +9,8 @@ jobs:
      - node/install-packages
      - run: ./build.sh
 
-     # start proprietary DB using private Docker image
-     # with credentials stored in the UI
-     #- run: |
-     #    echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
-     #    docker run -d --name db company/proprietary-db:1.2.3
-
+     - run: |
+         echo "$GITHUB_TOKEN" | docker login https://docker.pkg.github.com --username gunsch --password-stdin
+         TAG=0.1.$CIRCLE_BUILD_NUM
+         docker tag gunsch.cc:latest docker.pkg.github.com/gunsch/gunsch.cc/$CIRCLE_BRANCH:$TAG
+         docker push docker.pkg.github.com/gunsch/gunsch.cc/$CIRCLE_BRANCH:$TAG
