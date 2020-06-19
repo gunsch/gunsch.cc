@@ -1,0 +1,12 @@
+{
+  "name": "gunsch.cc",
+  "version": "1.0.0",
+  "devDependencies": {
+    "less": "^3.11.3"
+  },
+  "author": "gunsch",
+  "bugs": {
+    "url": "https://github.com/gunsch/gunsch.cc/issues"
+  },
+  "homepage": "https://github.com/gunsch/gunsch.cc#readme"
+}

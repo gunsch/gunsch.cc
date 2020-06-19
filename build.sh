@@ -6,7 +6,7 @@ OUTPUT_DIR=out
 mkdir -p "${OUTPUT_DIR}"
 
 # CSS compilation
-lessc site.less > "${OUTPUT_DIR}/site.css"
+node_modules/less/bin/lessc site.less > "${OUTPUT_DIR}/site.css"
 
 # Copy assets
 cp -r font/ icon/ "${OUTPUT_DIR}"
