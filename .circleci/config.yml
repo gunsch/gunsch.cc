@@ -8,11 +8,6 @@ jobs:
    steps:
      - checkout
 
-     # Install latest node and verify the version
-     - node/install:
-         node-version: latest
-     - run: node --version
-
      # Install packages (`npm ci` under the hood)
      - node/install-packages
 
