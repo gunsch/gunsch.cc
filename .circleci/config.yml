@@ -3,7 +3,8 @@ orbs:
   node: circleci/node@3.0.0
 jobs:
  build:
-   machine: true
+   machine:
+     image: ubuntu-2004:202111-02
    steps:
      - checkout
 
