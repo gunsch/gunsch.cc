@@ -43,7 +43,7 @@ a {
   width: 14px;
 }
 .container {
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   margin: 4px auto 0 auto;
@@ -99,7 +99,7 @@ p + ul {
 }
 hr {
   border: none;
-  background: gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#ffffff));
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#ffffff));
+  background: gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
   height: 1px;
 }
