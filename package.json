@@ -2,7 +2,7 @@
   "name": "gunsch.cc",
   "version": "1.0.0",
   "devDependencies": {
-    "less": "^3.11.3"
+    "less": "^3.13.1"
   },
   "author": "gunsch",
   "bugs": {
