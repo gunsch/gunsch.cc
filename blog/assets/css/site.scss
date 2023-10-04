@@ -1,3 +1,6 @@
+---
+---
+
 /** Main body **/
 
 $theme_pink: #d62770;
@@ -52,13 +55,13 @@ a {
 @font-face {
   font-family: "Catamaran";
   font-weight: 400;
-  src: url("font/catamaran-v6-latin-regular.woff") format('woff');
+  src: url("/assets/font/catamaran-v6-latin-regular.woff") format('woff');
 }
 
 @font-face {
   font-family: "Catamaran";
   font-weight: 800;
-  src: url("font/catamaran-v6-latin-800.woff") format('woff');
+  src: url("/assets/font/catamaran-v6-latin-800.woff") format('woff');
 }
 
 
