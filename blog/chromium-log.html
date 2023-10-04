@@ -1,0 +1,2493 @@
+---
+layout: default
+title: "gunsch@ Chromium log"
+---
+<style type="text/css">
+    table {
+      border-collapse: collapse;
+      margin: auto;
+      max-width: 800px;
+    }
+  
+    td, th {
+      font-family: sans-serif;
+      font-size: 10pt;
+      padding: 7px;
+    }
+  
+    th {
+      font-size: 14pt;
+      padding-bottom: 12px;
+    }
+  
+    td.date {
+      color: #666;
+      white-space: nowrap;
+    }
+  
+    td.author {
+      display: none;
+    }
+  
+    td.subject {
+      font-family: monospace;
+      font-size: 9pt;
+    }
+  
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+  
+  <div class="centered">
+    <table cellpadding=5>
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/0cd49cdb6e284cb00327aae2946571355df36b3c">0cd49cd</a></td>
+        <td class="date">2016-03-10</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Removes gunsch@ from watchlist / Cast owners.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e57e09c32253cb1be07ecd9c30a3ff06d863acc9">e57e09c</a></td>
+        <td class="date">2015-09-16</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: re-enables prefixed EME by default.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/c5b37ae14e085b5fff3f001fab961a1956a69ad1">c5b37ae</a></td>
+        <td class="date">2015-09-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Allow CCBrowserClient impls access to URLRequestContextFactory.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/99fd267e90b2b3261929dcc7f53a89883bc84c2b">99fd267</a></td>
+        <td class="date">2015-09-10</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Raise Cast's BrowserCdmFactory creation to CCBrowserClient.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/db501dffeca7f0b145d44c71cfc1ab57f50551a8">db501df</a></td>
+        <td class="date">2015-09-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Add cast_version_header dependency from CastSysInfoAndroid.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/521a1854d1a3de6e8dbd5aa4de98c63596849fc9">521a185</a></td>
+        <td class="date">2015-09-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Moves remote debugging start decision into CastContentBrowserClient.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/68c183accf49e8f96e794e86cb3cf06a25af1cc0">68c183a</a></td>
+        <td class="date">2015-09-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Lowers CastService out of chromecast/browser/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/2133b4589aa40225f9abd68b151f2a8359b9c8d0">2133b45</a></td>
+        <td class="date">2015-09-02</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Raises CastService creation to CastContentBrowserClient.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5ed6d7dbd78e779945a16566e0d04192aea782a2">5ed6d7d</a></td>
+        <td class="date">2015-08-31</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds cache for (key, hash) pairs to signature.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/3f39ec09100c898b5357b7a6230542229c8f5deb">3f39ec0</a></td>
+        <td class="date">2015-08-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] ATV: don't include logs from renderer process in logfile.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ee5a8891b64128e6bfb6072c1890a22c23bbcafb">ee5a889</a></td>
+        <td class="date">2015-08-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Adds base/android utilities: time change notifier, dump writer.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/cfc0f461f407fb957dbffa2f9302b134d1fd4c0b">cfc0f46</a></td>
+        <td class="date">2015-08-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Fix GN build: pref_names.* moved to chromecast/base.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/24edba4890dd86ffda6223048211520267a130a0">24edba4</a></td>
+        <td class="date">2015-08-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Moves metrics client ID/providers to CastContentBrowserClient.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a2222032cacc31d49edf8d0f2d566d07ef67dc8a">a222203</a></td>
+        <td class="date">2015-08-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Moves prefs to chromecast/base/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/eb298ca8740a2ed61e64e48444edd3851a786030">eb298ca</a></td>
+        <td class="date">2015-08-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Inform metrics service of not-idle state during Cast events.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/28b9ce635a7872afe923d70f3c5444c3a1c7f1a2">28b9ce6</a></td>
+        <td class="date">2015-08-18</td>
+        <td class="author">gunsch</td>
+        <td class="subject">[Chromecast] Simplifies platform-specific metrics code.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/684cc8e25a0cd4492789e1925f3c634cb811567e">684cc8e</a></td>
+        <td class="date">2015-08-10</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Ensure BrowserCdmManager's promises are safe to call while held.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/028845a5b25060ebf337b474301206a5ab89705c">028845a</a></td>
+        <td class="date">2015-07-31</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Android: if dequeueInputBuffer gives TRY_AGAIN_LATER, dequeue output buffers.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/8dbdf6483c35a0c57d0c369771a4dfce00ed46b2">8dbdf64</a></td>
+        <td class="date">2015-07-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast OWNERS update: +halliwell, -damienv.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/9a5896eb318fe22432ca7e87e21268a44f308fc2">9a5896e</a></td>
+        <td class="date">2015-07-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: shrinks libcast_shell_android target for testability.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/c1b1be7368e63c462266c3819648a2ade25d26fe">c1b1be7</a></td>
+        <td class="date">2015-07-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds .gitignore entries for Chromecast team.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/adc7c9bad11499e6ce1a10794e90327dfe326bbc">adc7c9b</a></td>
+        <td class="date">2015-07-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: disables all LayerTreeHost* tests on Android.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/2b0e12f7ea49ea1665bf663d0a86ca92c25d4d26">2b0e12f</a></td>
+        <td class="date">2015-07-14</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adjust test generator GYP rules for ATV.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e4a7697c57127c9015972dfb7bc51e31e3291474">e4a7697</a></td>
+        <td class="date">2015-07-14</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds run_test_list.txt generation, internal tests for ATV.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/db9824bb2ffd51cc023e19077749ffe777887223">db9824b</a></td>
+        <td class="date">2015-07-10</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Android test runner: support negative gtest filter syntax.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/978afc4d2c783622e8dfcb4431fed6189396db72">978afc4</a></td>
+        <td class="date">2015-07-01</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Cast ATV: only perform unmute on teardown if stream is currently muted.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/67dbdf1ba749c9ebe6ea250f1fefdd368c1240e9">67dbdf1</a></td>
+        <td class="date">2015-06-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds device_core to device_unittests dependency list.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d8fbbc459e567601217d4b21f66787492758925c">d8fbbc4</a></td>
+        <td class="date">2015-06-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: fix Android lint warnings, which are now build errors.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/3ee23fed3594d82d2d6fa2b87d524ccb01db5c91">3ee23fe</a></td>
+        <td class="date">2015-06-22</td>
+        <td class="author">gunsch</td>
+        <td class="subject">cast_shell_android buildfix: remove stderr reference.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5d1fef66183dbe232abef3144bef2db8bf5dd7b8">5d1fef6</a></td>
+        <td class="date">2015-06-18</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: use common PSSH parsing code and remove UUID box support.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7bfe4daab14676db218d3a4acfb523d164b7e98d">7bfe4da</a></td>
+        <td class="date">2015-06-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: unmute audio stream on Cast session finish on pre-M devices.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/1863f66a9edf3cc220ad7159b2090d9556130df6">1863f66</a></td>
+        <td class="date">2015-06-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: don't try to upload crash immediately.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b49702b06743ec66928a04e5ad8c77764456ec6c">b49702b</a></td>
+        <td class="date">2015-06-12</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: Android crash startup can't read path from /data/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7c0343cfad781414997cd713ae5ae4c9cc1d1eb3">7c0343c</a></td>
+        <td class="date">2015-06-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: move link-time decisions to inheritance-based Content*Client.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/9fe59726454bff4d3171f791955f3b9af04b0bc8">9fe5972</a></td>
+        <td class="date">2015-06-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast PSSH boxes must use data_size parameter.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d39b79a3473e64f262e9a8a6dadcaf43086f7219">d39b79a</a></td>
+        <td class="date">2015-06-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: Cma should set has_audio/video after initialization.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5e3e1a5ef2862ff4058931c46564a0da5c995770">5e3e1a5</a></td>
+        <td class="date">2015-06-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: use CastContent{Browser,Renderer}Client as a base class.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5c7431f6e59769a81f42616b9b6977e1f65e4abc">5c7431f</a></td>
+        <td class="date">2015-06-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: updates Android crash uploader to use HttpURLConnection.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/db78c310547225f966270178bbadf1303e6b7be8">db78c31</a></td>
+        <td class="date">2015-06-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Revert of Chromecast: Cma should has_audio/video after initialization finishes. (patchset #1 id:1 of https://codereview.chromium.org/1125033003/)</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5f7fab58725d10b1ccb26f70c3dfcfc19610f259">5f7fab5</a></td>
+        <td class="date">2015-06-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds external_video_surface_java target.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/0af11e456d0992f4ef8c67b4d67056ffe151e51e">0af11e4</a></td>
+        <td class="date">2015-06-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds fake libffmpegsumo target for more graceful internal build.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6a852f7ee7eafd16834701a19e48b3cf9a5b64db">6a852f7</a></td>
+        <td class="date">2015-06-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: registers old client_id metrics pref.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d8d033690bc70ab746983db5a8e540aa116dc5ae">d8d0336</a></td>
+        <td class="date">2015-06-01</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds MessageType to BrowserCdmCast::OnSessionMessage API.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/0eaa37b5c618503c1ea1d1b467481714bcf92595">0eaa37b</a></td>
+        <td class="date">2015-05-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Allows support for persistent session types in BrowserCdm.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/06ef7cacb458935497396f8e3810a29d62d97878">06ef7ca</a></td>
+        <td class="date">2015-05-28</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds ChromecastInitData parsing code.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b753ef520f769d0b7455283d4d842b3ec9f5581e">b753ef5</a></td>
+        <td class="date">2015-05-27</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: replace "CmaRendererUnitTest" with "CmaEndToEndTest".</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/78ceef57fff6570429dc9fe4aa291a512340955d">78ceef5</a></td>
+        <td class="date">2015-05-22</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: moves chromecast_switches.* from common/ to base/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e860606d53ad107ee875b55d07ef7624c84fc60c">e860606</a></td>
+        <td class="date">2015-05-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds Android implementation of CastSysInfo.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/48c25c15f0c882cac698bf06759a270a3f2d3b5c">48c25c1</a></td>
+        <td class="date">2015-05-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: MessageLoopProxy cleanup --&gt; SingleThreadTaskRunner.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/602004df17bfd877f8ff5bb7d7a9665ab992a7c4">602004d</a></td>
+        <td class="date">2015-05-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds CastMetricsHelper API from Java.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/be51eda15009d0cd718c1f2aeab48fefd384a4b8">be51eda</a></td>
+        <td class="date">2015-05-18</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Revert of Revert of Use BoringSSL in the implementation of ClearKey for Chromecast. (patchset #1 id:1 of https://codereview.chromium.org/1141243003/)</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/564d81833f28f73b9413c6d01725530ff91de64c">564d818</a></td>
+        <td class="date">2015-05-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Revert of Use BoringSSL in the implementation of ClearKey for Chromecast. (patchset #1 id:1 of https://codereview.chromium.org/1130893008/)</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6cedab01d86d6969c94c035683230a4c8add4a2b">6cedab0</a></td>
+        <td class="date">2015-05-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Moves Cast test list from chromium.fyi to chromium.linux.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/780d39fe5c9bce4e35ea88f916ae79a9febe7a01">780d39f</a></td>
+        <td class="date">2015-05-14</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds CmaRenderer test coverage.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/23b6c79d53147e704074c624bc6326bef4933ba4">23b6c79</a></td>
+        <td class="date">2015-05-14</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: Cma should has_audio/video after initialization finishes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/4b40fb3b268414b5d6cbf2987a901287b6ddc6da">4b40fb3</a></td>
+        <td class="date">2015-05-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Revert of [Chromecast] Ignore interfaces not used to connect to internet. (patchset #1 id:1 of https://codereview.chromium.org/1137483004/)</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/3ea31790faf24c410a330065cb953eab2ecf087d">3ea3179</a></td>
+        <td class="date">2015-05-07</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Componentizes external_video_surface to reduce webview/Cast duplication.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/4614a4f5597f0ec74bcb59e897b1d1ce4cf4dbea">4614a4f</a></td>
+        <td class="date">2015-04-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">MediaDrmBridge: only use delegate init data if non-empty.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/2288c539cc227ec262be28c4b684ff38527f7768">2288c53</a></td>
+        <td class="date">2015-04-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds MediaClientAndroid to support embedder/MediaDrmBridge interaction.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e457bf669b7ba54c286a65197693f3d655c7632b">e457bf6</a></td>
+        <td class="date">2015-04-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds base/bind.h include for media codec shim file.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/45d0df260fc8254c7743bcbcab92eec17b57fb92">45d0df2</a></td>
+        <td class="date">2015-04-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: removes ATV product information from UA string.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/3e32f30e87ac59351c01af0ec7d1e972298d3b29">3e32f30</a></td>
+        <td class="date">2015-04-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast startup race: don't add filter before HostResolver exists.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a12fcf00ae600a2245194dc4882b7214268c34c5">a12fcf0</a></td>
+        <td class="date">2015-04-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: make HandleCrash a FilterCallback in ATV crash path.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6b56c57d9229a4ee713f0487c70c6798cb0d37f0">6b56c57</a></td>
+        <td class="date">2015-04-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: temporary shim files for internal media codec callbacks.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/06ad6451eae0062a97e01570f1c403ceedc7dfff">06ad645</a></td>
+        <td class="date">2015-04-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: CmaMessageFilterHost SetCdm threading change.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5ffcbfc45f3ffff328a85025f1e61a76655b7a76">5ffcbfc</a></td>
+        <td class="date">2015-04-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Bind BrowserCdmManager callbacks to UI thread before passing to CDM.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ee935e25af1eefd0b786e6801bbec74e323638ab">ee935e2</a></td>
+        <td class="date">2015-04-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: enables unprefixed EME on Cast Android.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/41026375ea9cf32478351f963389bb76f21dd564">4102637</a></td>
+        <td class="date">2015-04-18</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: aura_test_support dep should be in cast_shell_common.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/550e1652df915047ed2442eb19002fc70d3582dd">550e165</a></td>
+        <td class="date">2015-04-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast teardown race: SetCdm vs. pipeline destruction.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/195e961645fb951a64213a2b4233006f27e88272">195e961</a></td>
+        <td class="date">2015-04-16</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: moves ConnectivityChecker to the IO thread.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5bd9c6bb68bfb0f4371150d85c9811861989bbcb">5bd9c6b</a></td>
+        <td class="date">2015-04-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Upgrades Cast trybots to blocking.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b63b533c2ef5ca96e5208a292dadfb264f217bf7">b63b533</a></td>
+        <td class="date">2015-04-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: make CAST_IS_DEBUG_BUILD to macro CAST_IS_DEBUG_BUILD().</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a80b4e3117ce3aa16bc5ce59cefc9e26b224b079">a80b4e3</a></td>
+        <td class="date">2015-04-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: sets chromium_code=1 in chromecast/media/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/24413fda915450e43423cfe3902f887b6a937ae8">24413fd</a></td>
+        <td class="date">2015-04-14</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Revert of Prime the landing pad for the new video rendering pipeline. (patchset #9 id:200001 of https://codereview.chromium.org/1053113002/)</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/107e8892ad7ab834645f7789b5f9891cc61a47f1">107e889</a></td>
+        <td class="date">2015-04-14</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: enables unprefixed EME APIs in embedder.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/136575025e9d3cd1823a79371514e38f25d477fa">1365750</a></td>
+        <td class="date">2015-04-13</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds a QuotaPermissionContext implementation.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/2d51d5f255ee038c0770fc101660728a3e44339a">2d51d5f</a></td>
+        <td class="date">2015-04-10</td>
+        <td class="author">gunsch</td>
+        <td class="subject">MediaDrmBridge: guards MediaDrm.removeKeys call in case of failure.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/1c55b5f5004d1dd3859988dd381e1a3ba2dd263b">1c55b5f</a></td>
+        <td class="date">2015-04-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Guards GetCache() use. HttpTransactionFactory::GetCache() may be NULL.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/99ed2aab6069a776024521b1242d6f519feb9948">99ed2aa</a></td>
+        <td class="date">2015-04-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Reverts Chromecast using external V8 snapshot files.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d7db4efd587b16ae52b13504e506ba2046f82be2">d7db4ef</a></td>
+        <td class="date">2015-04-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Updates Cast trybots to 100%.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/f6f3d88bfbc0f29d3a6ccf7d05ca652824d06df0">f6f3d88</a></td>
+        <td class="date">2015-04-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Cast ATV: default resolution back to 720, but with command-line switch.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e65e41d9685d0efb7b28396d4efaf373f505524b">e65e41d</a></td>
+        <td class="date">2015-04-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: updates crash keys entries.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7623ad7130f4beb954b00192f8009de208ca84c0">7623ad7</a></td>
+        <td class="date">2015-04-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">content_browsertests.isolate: ppapi_tests requires enable_plugins=1.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/126525e3197bc40568d847575a4ad0486cae55bf">126525e</a></td>
+        <td class="date">2015-04-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Guards irrelevant targets for Cast Android build.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/76d82921f0876d750efb733be8c85bb4dc68ba33">76d8292</a></td>
+        <td class="date">2015-04-02</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Revert of Chromecast: Stop filtering OutOfMemoryDeathTest.ViaSharedLibraries. (patchset #1 id:1 of https://codereview.chromium.org/1050003002/)</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/45da3f6b29852e8b14727be62cda757ccfb85c75">45da3f6</a></td>
+        <td class="date">2015-04-01</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Guard non-Chromecast-applicable targets when chromecast==1.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/909de2affe58cbc17893632f07ef3c368b437e97">909de2a</a></td>
+        <td class="date">2015-04-01</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: reworks CDM threading model.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6154636722815673f6cfadc93a0b61b77c71e9a4">6154636</a></td>
+        <td class="date">2015-03-31</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: don't build cast_media_unittests on Android.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ab581451d0bd05433afeb7e953bb1fcf229915bb">ab58145</a></td>
+        <td class="date">2015-03-31</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Disable chromium_builder_tests entries for chromecast.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/540e283dab10a46f48ba8e69d60751ac3325a7e8">540e283</a></td>
+        <td class="date">2015-03-31</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Guard hid_service_win.h include with OS_WIN.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/38ede236cc3ecdf28050e53ac1500eb8794db9be">38ede23</a></td>
+        <td class="date">2015-03-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: permissions manager missing include.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/25850f1d1e4e78d032ca4c565688067e4a3a25a4">25850f1</a></td>
+        <td class="date">2015-03-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: clean up references to cast_internal_gyp.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/505fd7757ff378cbb71e4cb20ac16a74e5236613">505fd77</a></td>
+        <td class="date">2015-03-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: grant all permissions from CastContentBrowserClient.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/02dd0e6986155a821c2544ad338235e12b9e4f80">02dd0e6</a></td>
+        <td class="date">2015-03-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Run chromium_trybot based Cast bots at 10%.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/4aa7ab3079723de79ef336a3bd7b4a2316030c4f">4aa7ab3</a></td>
+        <td class="date">2015-03-25</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Removes Chromecast-custom-recipe trybots from 10% experimental.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/fed9cc4ee48bf831f52127f56c2d442ddedff4a1">fed9cc4</a></td>
+        <td class="date">2015-03-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds FYI tests for Cast Linux bot.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/44bd2c605dba85ee377c697346789e8e3cbabe63">44bd2c6</a></td>
+        <td class="date">2015-03-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Cast ATV: graphics plane defaults to 1080p.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ef9016e037ebde1eed6a02100bf9edc2587e7f66">ef9016e</a></td>
+        <td class="date">2015-03-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Cast ATV: crash handler should test CAST_BUILD_INCREMENTAL.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/504b1da3fb365a0c59af25ba44dbeb998b764a5e">504b1da</a></td>
+        <td class="date">2015-03-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Fix for clang build warnings: undefined variables if !USE_UDEV.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5922e15ca3d5c13d576e5d734c588852b509764d">5922e15</a></td>
+        <td class="date">2015-03-18</td>
+        <td class="author">gunsch</td>
+        <td class="subject">DNS Prefetch fix: renderer shouldn't send long hostnames to browser.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/1f11e922c34e28786c16436839ca9146df10fd74">1f11e92</a></td>
+        <td class="date">2015-03-16</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Buildfix for Ozone Linux build: guard build/linux/system.gyp:atk dep.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/303cc9b395a6983e73e1fb44c4bacf8923e9a8d1">303cc9b</a></td>
+        <td class="date">2015-03-16</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: removes histogram macro for AddCount.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7cbdcb216ea70a52c1a0d65f4bdf0348e11f0144">7cbdcb2</a></td>
+        <td class="date">2015-03-13</td>
+        <td class="author">gunsch</td>
+        <td class="subject">UMA: use a more frequent upload interval for Chromecast.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b1b1e8c6c1aa269142344ed2b2937c9ddb230bee">b1b1e8c</a></td>
+        <td class="date">2015-03-12</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: use weak pointers for AvPipelineImpl callbacks on CMA thread.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/c645303c79f837036c90f732de8be5538c0f57b8">c645303</a></td>
+        <td class="date">2015-03-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: ClientCertificateDelegate changes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d8f23a5a8450540db1145ee70591325de570d2cf">d8f23a5</a></td>
+        <td class="date">2015-03-06</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: fixes crash in AvPipelineImpl teardown.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5aabb3fb79526ba574f1a0b91273af1d990570e2">5aabb3f</a></td>
+        <td class="date">2015-03-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: implement other MediaKeys interfaces in BrowserCdmCast.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e668855cd886fe524b7b5edc9397eaeea9e046d4">e668855</a></td>
+        <td class="date">2015-03-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Fix assumption: HttpTransactionFactory::GetCache() may return NULL.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b9f93849a2dc16b90265bd1f2c8bd65109c4a1e4">b9f9384</a></td>
+        <td class="date">2015-03-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: replay buildfixes in SwitchingMediaRenderer code.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/568f43629db2ee7c2121adf576c21e06554d5c2e">568f436</a></td>
+        <td class="date">2015-03-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast Android: pass ICU file descriptor to render process.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7ee951aad36bcd3d9cb5c1ef5ce504822a53073e">7ee951a</a></td>
+        <td class="date">2015-03-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: communicate HDMI-sink codec changes over IPC.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/36fdd401d567e5c75180610dd6df564fe00c9ffc">36fdd40</a></td>
+        <td class="date">2015-03-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: mitigate threading issue between AvPipeline/MediaKeys.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/8d23afa1dee0d0eaa1ed0782963c3a6ac263ae97">8d23afa</a></td>
+        <td class="date">2015-03-02</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Fixes clang warning in GLSurfaceOzone.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/60492b548ef6897223b22233a7fd28c05c71322c">60492b5</a></td>
+        <td class="date">2015-03-02</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: CMA renderer has new Initialize interface.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/05dc1e37e6b73e07463ef44a65c7f5929b8f7cd3">05dc1e3</a></td>
+        <td class="date">2015-02-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: always enable CMA pipeline.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7455cdef0bf57b6e9fa69da8b980e5af744c10cd">7455cde</a></td>
+        <td class="date">2015-02-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: tracing script to use for Linux-based cast_shell.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/eea787c3f805116d7eb9d07cff868c7fb9ff61f3">eea787c</a></td>
+        <td class="date">2015-02-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: get locale from ICU instead of caching permanently.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ec6d20ecb9586de310cf524ec1cfa1c0111a9427">ec6d20e</a></td>
+        <td class="date">2015-02-25</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: moves all service startup code to PreMainMessageLoopRun.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d1f98807766c93a37d1413990b07f647011097aa">d1f9880</a></td>
+        <td class="date">2015-02-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds CastCryptoMsgStart to IPCMessageStart list.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/dc4666755b0408c2ec6eba26211a77ca502ff9e6">dc46667</a></td>
+        <td class="date">2015-02-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: disables wifi-based features on ATV.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e74cff743e37d9fcbe5c5689d7480f21ef2ca936">e74cff7</a></td>
+        <td class="date">2015-02-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: restores AddKeySystemWithCodecs, fixes namespace.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b8f7d9035eacd2727f3c6ee8722a05cdfbce6d13">b8f7d90</a></td>
+        <td class="date">2015-02-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds internal flags necessary for browser test runner.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/62fac30285ae6d9155ba82e545c0aa0ee8fff025">62fac30</a></td>
+        <td class="date">2015-02-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: minor code cleanups.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e2e001067910d8d5acda012b6a05c1d4c34c232f">e2e0010</a></td>
+        <td class="date">2015-02-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds application and WebUI resources for internal build.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/60ae9468add0f6a2562c52000dbae0eea546790b">60ae946</a></td>
+        <td class="date">2015-02-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: tighten cases for uploading crash dumps to prod server.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/3908acad791eb53f2c0f1e7cf4a7abcad8478726">3908aca</a></td>
+        <td class="date">2015-02-18</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: add platform hooks to inject browser/renderer message filters.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5e40b4d70c5f26808881badfbe6e0c0fea9cccc3">5e40b4d</a></td>
+        <td class="date">2015-02-18</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: removes chrome-devtools:// protocol from debugging page.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5bffe45a499435fd9a4e05e01b61f163bcdb3758">5bffe45</a></td>
+        <td class="date">2015-02-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds Chromecast builders at 10% experimental.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/cd38a84418d8d192199016af8c3902e6fea61d5a">cd38a84</a></td>
+        <td class="date">2015-02-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: makes CastWindowAndroid use CastContentWindow.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5342378a108f0a6b524f444a6819a4e199d16e06">5342378</a></td>
+        <td class="date">2015-02-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: allow platform to add custom native bindings (take 2).</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/81cc3d470093662d260c37e451bb30c686283fff">81cc3d4</a></td>
+        <td class="date">2015-02-10</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: allow platform to add custom native bindings.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/93ba65551bb3ddb495577acaefbb0b93715819ec">93ba655</a></td>
+        <td class="date">2015-02-10</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: re-enables image loading in headless mode.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/2567caca45d545c21cd81c7cb42edd29a4c68515">2567cac</a></td>
+        <td class="date">2015-02-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: change BrowserCdmCast threading model.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/913b668663b854e3d88dcf42f5e055a94d824fb1">913b668</a></td>
+        <td class="date">2015-02-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Fix DNS Prefetch in Chrome: new message type not added to filter.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/400ad00072c3f55fd449ed80373f261d06cf5348">400ad00</a></td>
+        <td class="date">2015-02-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds hook for content embedders to get media::BrowserCdm*.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/8ce7fd4137da4b4d5077361b3995fd5a75d4ae8b">8ce7fd4</a></td>
+        <td class="date">2015-02-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast Android: fix for 100% crash when child process is launched.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7b28897b0d5ddb916cdaf0ccab227c27520a068b">7b28897</a></td>
+        <td class="date">2015-02-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: Makes cast_crash_client common across builds.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5857e9ed6883cd72c913aa180a5b01e543d72056">5857e9e</a></td>
+        <td class="date">2015-02-02</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: updates BrowserCdmCast to handle new BrowserCdm API.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/2ca77068898cd0e634033f9ceabc96ca21ea3df3">2ca7706</a></td>
+        <td class="date">2015-01-28</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: connect CastBrowserCdmFactory during startup.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/72d93fc433506bf0df2d3d45a02cd623aeb5ff80">72d93fc</a></td>
+        <td class="date">2015-01-27</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: rpath for loading NSS module in cast_shell directory.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d6a9562f0f84619a12d2c259aece8f6574defaa2">d6a9562</a></td>
+        <td class="date">2015-01-27</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast Android buildfix: use new ContentViewCore.initialize API.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b21ec6784e95b15dbd5d2c8775d3339a3cfeb62a">b21ec67</a></td>
+        <td class="date">2015-01-27</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: update VideoPlane CoordinateType list.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ba059dd97b94f6b3ce326fef9b1e5a9ac14e4032">ba059dd</a></td>
+        <td class="date">2015-01-27</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: #elif --&gt; #else.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/474ba4f54ed0c050a74c35ec7ec73d849bc9f6ee">474ba4f</a></td>
+        <td class="date">2015-01-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: fixes CMA renderer initialization crash.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/9ca5b72d0c04e2549d6374d86ef9ec7ac324010d">9ca5b72</a></td>
+        <td class="date">2015-01-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: update CmaRenderer for Initialize API change.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/050bed365f613a1227364055ae19b1e4445f963a">050bed3</a></td>
+        <td class="date">2015-01-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast ATV: distinguish actual shutdown vs. lifecycle from sleep.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/235014a6cd779c40976ba7cc7862b00f8c320a15">235014a</a></td>
+        <td class="date">2015-01-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds hook for internal code to set command-line flags.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e16def6f1ddbc9872eeb6321d8c7e7d33e79288c">e16def6</a></td>
+        <td class="date">2015-01-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: updates BrowserCdmFactory for new API.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/4cf366a9f24c7b4a56290cb71bdaaa3da7e244e6">4cf366a</a></td>
+        <td class="date">2015-01-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast test build fix: add mojo dep for direct_dependent includes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/739bc11d674b4f4663bf8adf5bd9b6eb0ee5eb1c">739bc11</a></td>
+        <td class="date">2015-01-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: add a CastRenderViewObserver for wiring up native bindings.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/50744b441eb89a1140050942b0fd2acafe330927">50744b4</a></td>
+        <td class="date">2015-01-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: include missing headers.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7068e9a17db53a23b4b066e114b376336064b4bf">7068e9a</a></td>
+        <td class="date">2015-01-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: propagate kEnableCrashReporter switch to child processes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ff08f1567fa0ffee1cec72527827e02620f69bff">ff08f15</a></td>
+        <td class="date">2015-01-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast Android buildfix: remove repeated 'conditions' GYP block.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/049bfe1e4d24629b135c55ac7905bd1391a17974">049bfe1</a></td>
+        <td class="date">2015-01-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: attach the crash signal FD to the child process FD list.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/30f7125f71b7c0f59997a3aefe86db63a7707bbc">30f7125</a></td>
+        <td class="date">2015-01-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast Android: must explicitly bundle and extract icudtl.dat.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/57461f22708d2122bfcf5d388bb5d439dc82ce58">57461f2</a></td>
+        <td class="date">2015-01-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds BrowserCdmFactory that delegates to the platform.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/fac2e7137a33675d6ef2a4a20f7c0c66ad5e8928">fac2e71</a></td>
+        <td class="date">2015-01-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: replaces CMA synchronization flag with finer-grained enum.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d2386aadf6c8350dabff4f820f2b73f44c487caa">d2386aa</a></td>
+        <td class="date">2015-01-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: wires up CMA in CastContentBrowserClient.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5751172700f69b771970e05c62ec335be5531cfc">5751172</a></td>
+        <td class="date">2015-01-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: forcibly trigger GC in low-memory situations.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/c02c29e735df5d26ea34241b0d10a42bf4d81933">c02c29e</a></td>
+        <td class="date">2015-01-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: use PlayerTrackerImpl in BrowserCdmCast.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a4b98fb5b518e886851131916816c0b607768392">a4b98fb</a></td>
+        <td class="date">2015-01-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds disable_display define for headless builds.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/21b7ba83afa5c9b8a959dc47ed97c47cd3f3b145">21b7ba8</a></td>
+        <td class="date">2015-01-07</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: makes CastContentWindow a WebContentsObserver.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/953ad08b2f31268841901155b44564339d78e852">953ad08</a></td>
+        <td class="date">2015-01-06</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: unbundle ICU data file from the binary build.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/c83ee88cdc45d2e6cc9a54768b978ba2f30fd46f">c83ee88</a></td>
+        <td class="date">2015-01-06</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast Android buildfix: fully-qualify AttachCurrentThread.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7f9fc2234d79c5422fc538fa9337d4378c08363a">7f9fc22</a></td>
+        <td class="date">2015-01-06</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: virtual/override cleanup.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/69f3ac4d66367cb7bc4d0e9f0f869f862927e767">69f3ac4</a></td>
+        <td class="date">2015-01-06</td>
+        <td class="author">gunsch</td>
+        <td class="subject">virtual/override specifier cleanup in device/battery/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/0cffcfcc81a27345965a05ad0654d7d5ccd9eea9">0cffcfc</a></td>
+        <td class="date">2015-01-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">virtual/override specifier cleanup in ui/ (mostly Ozone code).</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5b7b77c964fbc852de546303428622029a0fd636">5b7b77c</a></td>
+        <td class="date">2015-01-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">virtual/override specifier cleanup in content/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ffedd1e87bcfca0c50c75f8ae776a071f3075634">ffedd1e</a></td>
+        <td class="date">2015-01-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">virtual/override specifier cleanup in skia/ext/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/20a3fd7f7e15e35c661866e9d237adb5cbdad3e1">20a3fd7</a></td>
+        <td class="date">2015-01-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">virtual/override specifier cleanup in media/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/924ce97ab90a546fa4b875ddd12b0789399fe347">924ce97</a></td>
+        <td class="date">2014-12-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds a few dummy GYP targets for easier internal build.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/969a86e48719fdab92935e9939a53b109968eaa3">969a86e</a></td>
+        <td class="date">2014-12-22</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: wires up renderer-side CMA message filter.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/8fb7fbcb06fb1f858efbfe7063cf89a07978ff27">8fb7fbc</a></td>
+        <td class="date">2014-12-22</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast on Android buildfix: don't try to create a RendererFactory.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b92c86123a104755979df8105ae0beb4dc6ec368">b92c861</a></td>
+        <td class="date">2014-12-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">MediaCodecBridge: only reconfigure AudioTrack for audio-based instances.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6e56a0c055ab2afd24a35c99db3b28c8b5fad84a">6e56a0c</a></td>
+        <td class="date">2014-12-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: generate IPC ParamTraits implementations for enums.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/f9e882d11000bca774ba8799549bef15210983e3">f9e882d</a></td>
+        <td class="date">2014-12-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">MediaCodecBridge: reconfigure AudioTrack when sample rate changes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a2d67bde611f7b1653195298603529178860af6e">a2d67bd</a></td>
+        <td class="date">2014-12-16</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: IPC messages for browser-based media pipeline.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5d1cbbb149438debc8c34871f6f2c33beff1062e">5d1cbbb</a></td>
+        <td class="date">2014-12-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: media interfaces for hardware-backed video plane.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/18a4639a41ea2d79b818c30d766e78808fcf2a10">18a4639</a></td>
+        <td class="date">2014-12-12</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds date/time to version string for local builds.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e49c69208e7da19a0b2a3ac9f2fd67d25c4a889e">e49c692</a></td>
+        <td class="date">2014-12-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds DNS prefetch support to Chromecast.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ec45ff1d325cc44fce8c41d59b8235148eb206d5">ec45ff1</a></td>
+        <td class="date">2014-12-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: enable browser CDMs.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/3e085e5b72df9029b682e5884e626b79188fdd52">3e085e5</a></td>
+        <td class="date">2014-12-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: automatically create home/config dir.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b5baf6bb58875300fabf71f71653dd06065f1a63">b5baf6b</a></td>
+        <td class="date">2014-12-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Pass a RenderCdmManager to RenderCdmFactory in ENABLE_BROWSER_CDMS case.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5fa50f1b4804f0283a80f5e035105cf59eec588a">5fa50f1</a></td>
+        <td class="date">2014-12-09</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds test filters for failing tests.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6b45094444c528b4e72308ed524e2b7c34b7c2da">6b45094</a></td>
+        <td class="date">2014-12-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Revert "Chromecast buildfix: update SelectClientCertificate API."</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/38f42e689d26db82d2a3c165a8dc171712066299">38f42e6</a></td>
+        <td class="date">2014-12-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds media::Renderer implementation for CMA pipeline.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/00df169a990ea09d488f1c13ec0293fc11d7992e">00df169</a></td>
+        <td class="date">2014-12-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds simple browser-side implementation for DNS prefetching.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/3334d1695296a5ef6d2a432119c5de44ca07ab15">3334d16</a></td>
+        <td class="date">2014-12-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Provides method for setting a BrowserCdmFactory for IPC-based CDM.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/0623ac9bb431ada04f0f2558ca032188e2360324">0623ac9</a></td>
+        <td class="date">2014-12-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">BrowserCdmManager: gets RenderFrameHost instance on the correct thread.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d9bd422472cfa491761ca6d644345f79cd0eb9ad">d9bd422</a></td>
+        <td class="date">2014-12-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: update SelectClientCertificate API.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/fb34d46fae20760df6448f556dd70ca776ad6bdb">fb34d46</a></td>
+        <td class="date">2014-11-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: removes CastMetricsServiceClient unit test from GYP file.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/bd08add63918abae4ef8fb10b515bef9ce153d14">bd08add</a></td>
+        <td class="date">2014-11-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds a media pipeline feeding data to CMA device backends.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a4c8435fd21f0016d0800e13f36f90c4fa28c21e">a4c8435</a></td>
+        <td class="date">2014-11-20</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Guard call to assertSubtreeClearedPaintInvalidationState correctly.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/0bf377647b4b9cd68a842a7d65d6a3e90e3b8493">0bf3776</a></td>
+        <td class="date">2014-11-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: test support for builders.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ef2c7eac3c1c9de88f279d4b15f150ef17d2ae51">ef2c7ea</a></td>
+        <td class="date">2014-11-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: extensions to the BrowserCdm interface.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/c2211e88eaf3ac748adc52a82123889836a0c4d7">c2211e8</a></td>
+        <td class="date">2014-11-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds crash handling for Linux build.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/aeed25ae69ef186a49fa90cd6f1eef28b0677382">aeed25a</a></td>
+        <td class="date">2014-11-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: webui_cast.h was removed.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/4f1a2509c4fbd06cf99418df3193f83812f4d719">4f1a250</a></td>
+        <td class="date">2014-11-18</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Removes the test to create CastMetricsServiceClient.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/edf5a93c4b9b3a5a2b318f9c1973e9d8ff2c768a">edf5a93</a></td>
+        <td class="date">2014-11-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Componentize renderer side of DNS prefetching.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/53a8876984c7593bab28a31e19ccdc904638c19e">53a8876</a></td>
+        <td class="date">2014-11-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Android: use demuxer configs for video output size.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/46498cd67fd86c0e859c356c154ae28aaf76bfa2">46498cd</a></td>
+        <td class="date">2014-11-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">BrowserCdmManager: remove CDMs on correct thread on RenderFrameDeleted.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5063f5d24f40118af32125287f50775a77d522b6">5063f5d</a></td>
+        <td class="date">2014-11-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Fixes unused variable in MediaWebContentsObserver.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/cef99a943f303c78969acef43d637e29afc9b222">cef99a9</a></td>
+        <td class="date">2014-11-14</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: scoped_ptr cannot be initialized with NULL.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/1f2debb9557a0a9831921dddc20a2d073b7311a0">1f2debb</a></td>
+        <td class="date">2014-11-12</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: satisfy new CreateZoomLevelDelegate API.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/dcfbc68c6b74bd50e25098a6cf81b16209d4dce6">dcfbc68</a></td>
+        <td class="date">2014-11-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds handler to log metrics from external processes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/353ee4a076787064adb454c02551d34680625753">353ee4a</a></td>
+        <td class="date">2014-11-05</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Crash component: adds API for clients to handle the crash minidump.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/357d1f8cc2c53eebafa512b258acd6b18d0c44ab">357d1f8</a></td>
+        <td class="date">2014-11-04</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Use MediaFormat's crop rectangle when available instead of width/height.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/68fedbf9d589ef8b1d6cf69e653dd1bb17f50135">68fedbf</a></td>
+        <td class="date">2014-11-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: disables WebKit's overlay play controls.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/cbdaf76256d60e43e0859ad6e3d893e879610df2">cbdaf76</a></td>
+        <td class="date">2014-10-31</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: use more recent Android support lib if available.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/31e90adac9fd24f1b451bbe936406fbc0fe7345d">31e90ad</a></td>
+        <td class="date">2014-10-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: removes devtools resources from bundle.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/64aeb562abb00459d478e472e8302f2bdc2808cc">64aeb56</a></td>
+        <td class="date">2014-10-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds platform hooks for initializing client-auth support.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/726be5f93e1bb7334368b52bd7f5a977391a89b3">726be5f</a></td>
+        <td class="date">2014-10-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Clipboard buildfix: USE_AURA without TOOLKIT_VIEWS failed to compile.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/01f333cdff310dd7e0393c74e5751016071055d6">01f333c</a></td>
+        <td class="date">2014-10-28</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds gunsch@ to chromecast/ WATCHLISTS.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/07ecfeec1678bde98e95b9fb3d65ef08218c471a">07ecfee</a></td>
+        <td class="date">2014-10-28</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: content::KeySystemsInfo moved to media namespace.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5a3959f46686634e1c7b380bc65d41833b5d5b19">5a3959f</a></td>
+        <td class="date">2014-10-27</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: use variable internal GYP variable consistently.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/1410111091ab82b64d7400cd8d2ee7158e920240">1410111</a></td>
+        <td class="date">2014-10-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix (Android): locale API changed.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/c4d9bcb7283c12d3330b855281703b05e3cd0644">c4d9bcb</a></td>
+        <td class="date">2014-10-22</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast on Android: always use a SurfaceView for video playback.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/28ee41b69feb19b95e4a33e7ef11b578b321de3a">28ee41b</a></td>
+        <td class="date">2014-10-22</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: crash upload logic improvements for Android.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/ccd4ab466fa8fb28d6fef9b22c8e4bcb57dcab68">ccd4ab4</a></td>
+        <td class="date">2014-10-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast browser test: use CastContentWindow for test lifetime.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/618be0a5e27b9b0d5e4a1803da8515a54281973a">618be0a</a></td>
+        <td class="date">2014-10-21</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Buildfix for no-args cases to RenderCdmFactory.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7d57bdc3c5afc1fd8a5c2ef72c751735582962a1">7d57bdc</a></td>
+        <td class="date">2014-10-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds class to help record complex histograms.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/f898f99146b7cde544c9c10d7cbe9861a6c71bc5">f898f99</a></td>
+        <td class="date">2014-10-20</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: extracts Linux window creation code to a common place.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/57e4c85b678e003d8790fed9ada30496783b4e6c">57e4c85</a></td>
+        <td class="date">2014-10-17</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast media pipeline: handle CENC "full sample encryption" case.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7547f25c856d4c2f9ccf4ec65ac96c39b1229cad">7547f25</a></td>
+        <td class="date">2014-10-16</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds Cast on Android as a valid tracing configuration (chromecast_shell).</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/f44ffcbebf37154f23917d058c1bb6fa295887e3">f44ffcb</a></td>
+        <td class="date">2014-10-13</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Reorganizes Chromecast code to better reflect functional dependencies.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/69b99efe022a4e44384522da1c117364e9d1dc4d">69b99ef</a></td>
+        <td class="date">2014-10-13</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Revert "Removes MediaDecoderJob virtual method call from destructor."</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6a1f7b511cdcb590bcebb8371e880908fe592a22">6a1f7b5</a></td>
+        <td class="date">2014-10-10</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Removes MediaDecoderJob virtual method call from destructor.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/168c44ce90012516dcfa91ac80a6d0a200513531">168c44c</a></td>
+        <td class="date">2014-10-08</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds crash handling for Android build.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6346166732c9bf991694d968742f352bac8445e9">6346166</a></td>
+        <td class="date">2014-10-06</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds interfaces for hardware layer of CMA pipeline.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/794810208e249261735b14e682b763ce3aa2d614">7948102</a></td>
+        <td class="date">2014-10-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds test frame-segmenter code to support CMA unit tests.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/65a3be162f29be44469afce8e79d635f2386e29e">65a3be1</a></td>
+        <td class="date">2014-10-03</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast Android buildfix: rework CommandLine initialization logic.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/2f35020968e8015b15d5f22bc3fe540459d82d89">2f35020</a></td>
+        <td class="date">2014-10-02</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: provides ExternalVideoSurfaceContainer for Android.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/13bb1a56fe5b6ecd5b2ee8ff9ab0857671eb95fc">13bb1a5</a></td>
+        <td class="date">2014-10-02</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds "DecryptContext" to CMA for managing encrypted frames.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/8580f192f3e94f06a1f1e577b8b734527427d942">8580f19</a></td>
+        <td class="date">2014-10-02</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds stability metrics provider to track crashes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b098afcdc9323e47baa8ad1f268f945a0b7120c3">b098afc</a></td>
+        <td class="date">2014-10-02</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: device identification for whitelisted apps and servers.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/cc40100c7c9b5be5ae9f13b888e875d63f2844cd">cc40100</a></td>
+        <td class="date">2014-10-01</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: script to set command line flags for Android build.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7d8a80f4ac2bd828b190b146edcadfa1b61fa508">7d8a80f</a></td>
+        <td class="date">2014-09-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: minor buildfixes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6c4c7846c0855786a3f4f9dcbc6dcacfd74479cc">6c4c784</a></td>
+        <td class="date">2014-09-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: removes android:permission="INTERNET" from manifest.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/00128b5be6034947946a15fac18384bf57d225ab">00128b5</a></td>
+        <td class="date">2014-09-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: use ARGB format for WebColor.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/38b0a899fccc8e74b2b0425e17938ff62d35fe34">38b0a89</a></td>
+        <td class="date">2014-09-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: User-Agent string should have "/" before build number.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/f4c1193e921319773384f5ee4f5f16967e468341">f4c1193</a></td>
+        <td class="date">2014-09-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: Android devtools needs remote frontend URL.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/4738efc43d3337ca6f439fdb240734d9afdde6e0">4738efc</a></td>
+        <td class="date">2014-09-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: removes CastNetworkDelegate from CastService::Create.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7b23fd179076904d083d9a0df047806bf31508a1">7b23fd1</a></td>
+        <td class="date">2014-09-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds callback for CastService to control metrics state.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b8994f59e6ae79e75b4048ced3cc5e6e9f107cd6">b8994f5</a></td>
+        <td class="date">2014-09-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: guard PlayReady with C-define to prevent accidental use.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/c264a0567ee9417d1ff8d8dc61f3a79f2232ea06">c264a05</a></td>
+        <td class="date">2014-09-27</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds Android switches for media playback.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/dacd4f6f6d3e81a2522a19f2dc0660b9ada62b31">dacd4f6</a></td>
+        <td class="date">2014-09-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds CastNetworkDelegate.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/77e32f77bb0b7aa6fc7395ce39c19df5263c21bd">77e32f7</a></td>
+        <td class="date">2014-09-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: always enable "Media" blink logging.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/83b94acc142da573e23262f297ef0cdee89eb3b8">83b94ac</a></td>
+        <td class="date">2014-09-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: provides a method to check if config has been set by user.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/62a52e7512c1f017260414f05da3c05ebaa02599">62a52e7</a></td>
+        <td class="date">2014-09-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds scheme for local file support in Android.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/cb10249278aacc078e0e95936cf68da1d95b64a3">cb10249</a></td>
+        <td class="date">2014-09-25</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: call ClosePage(), wait 50ms before deleting WebContents.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d3644ba2bed10e782782724992c7897732b277c9">d3644ba</a></td>
+        <td class="date">2014-09-25</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds Chromecast build # to User-Agent string.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a88fa8557f96858506a77ebbdddd5e375a2d0c16">a88fa85</a></td>
+        <td class="date">2014-09-24</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: disables downloads from the Chromecast shell.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d87803b74c52fbee3dbaff15a87b75e965ac97c4">d87803b</a></td>
+        <td class="date">2014-09-24</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds AddKeySystemWithCodecs to key_systems_cast header.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a9851bf10ee5cba8ca32d03f2543a8271b55059d">a9851bf</a></td>
+        <td class="date">2014-09-24</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: always disable "shrinks viewport content to fit."</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/8bbce0365dc6ff4773279be1afa7ff7d462bc042">8bbce03</a></td>
+        <td class="date">2014-09-24</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: set Android profile dir and ensure it exists.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a9023056a62c94c654856d61357123f36decb18e">a902305</a></td>
+        <td class="date">2014-09-24</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: allow local file access for Android.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6c9a270724ca3787fe7289132ce8a7e4a53978c2">6c9a270</a></td>
+        <td class="date">2014-09-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: adds GYP dependency on cdm_renderer.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/1ce9a794521edc033aa5fd3a235002817690d9eb">1ce9a79</a></td>
+        <td class="date">2014-09-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: adapting to ContentViewCore API changes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/e2dcec515affa3eb82d5767621be65ebb5ef7d17">e2dcec5</a></td>
+        <td class="date">2014-09-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds Build.MANUFACTURER to native BuildInfo wrapper.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/25deaa9ef9f22d2da25872905bb25434e63d49e3">25deaa9</a></td>
+        <td class="date">2014-09-19</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds Gpu/Network/Profiler metrics providers.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/840bc4163159ba58413ffa9658e888b1336851fe">840bc41</a></td>
+        <td class="date">2014-09-18</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Moves ProfilerMetricsProvider to //components/metrics.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b50a4e3f22e64129176a9dccd4d280b9aba2f700">b50a4e3</a></td>
+        <td class="date">2014-09-16</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds initial key systems support for Chromecast.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/98dd6bf5335d87832f551e839b799421e45b3a5e">98dd6bf</a></td>
+        <td class="date">2014-09-16</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast Android shell improvements: * Handling RenderProcessGone in CastWindowAndroid * Using CastBrowserProcess instead of passing the browser context * A few style nits</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/1afc65175c84ddf6087f65da818bbdbba6d28101">1afc651</a></td>
+        <td class="date">2014-09-15</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Moves GPUMetricsProvider to //components/metrics.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5a27ea9e8745955c1792e7769a05c0c782ac8360">5a27ea9</a></td>
+        <td class="date">2014-09-12</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Android buildfix: ResourceExtractor moved to org.chromium.base</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/3c2a17334b2d458a614af4727b88087379412d96">3c2a173</a></td>
+        <td class="date">2014-09-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: end-to-end browser test based on content::BrowserTest.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/407189f61ab162096ea98c40b2ecd85875bd6049">407189f</a></td>
+        <td class="date">2014-09-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: initial checkin of Android-based cast shell.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/043f36003d1d0a36be39f7eb071eeab5970d6300">043f360</a></td>
+        <td class="date">2014-09-11</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Moves NetworkMetricsProvider to //components/metrics.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/c23da6335efe9b5f80e045a298c87e823e775268">c23da63</a></td>
+        <td class="date">2014-08-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: forgot an include.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/db879ef83d0b84eeb4d4bc6a77249ace1b2b13ba">db879ef</a></td>
+        <td class="date">2014-08-30</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: command-line switch to override the UMA metric upload URL.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/611228ee885eb89f54703e24fd547b4832d189d8">611228e</a></td>
+        <td class="date">2014-08-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: adds CastBrowserProcess to manage browser process entities.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/fc831ad35e3b9be324045a08a46f21689001a9f9">fc831ad</a></td>
+        <td class="date">2014-08-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: return the correct locale in ContentBrowserClient.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/cf7730f044f0e5384ee5aefb5dce587946f632f2">cf7730f</a></td>
+        <td class="date">2014-08-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast: rm explicit constructor on CastMetricsServiceClient.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/79597a807f9225fa87a7b1810b11444cf2622fde">79597a8</a></td>
+        <td class="date">2014-08-29</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast fix: MetricsStateManager segfaults if callbacks are empty.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/f06cac17d72816ea796d3e4d6ea74344c1fd9781">f06cac1</a></td>
+        <td class="date">2014-08-27</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast devtools API fixes.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/bf984bb644aaff410d0bd995c518ff3f15030a23">bf984bb</a></td>
+        <td class="date">2014-08-26</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Chromecast buildfix: MetricsService has moved to metrics namespace.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/0ee038dd6ea4cf91ab50f6f4d459e6f2f5dd10d7">0ee038d</a></td>
+        <td class="date">2014-08-23</td>
+        <td class="author">gunsch</td>
+        <td class="subject">Adds CastMetricsServiceClient to Chromecast shell.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/787c167bf6ed8b53bfe837c18d8a428cecd5f62f">787c167</a></td>
+        <td class="date">2014-08-16</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Chromecast: moves cast_shell.pak output to assets/ directory.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/0c6ab158fa5268d295c2d7621a69ea53804c226a">0c6ab15</a></td>
+        <td class="date">2014-08-15</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Chromecast: disables application cache.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/9fa55111b67cb29c577057f648b46a307cc3b8be">9fa5511</a></td>
+        <td class="date">2014-08-15</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Adds Chromecast hardware information to SystemProfileProto.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/436901b2125fcf72679dd315487abdc70488a6af">436901b</a></td>
+        <td class="date">2014-08-15</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Adds locale strings to Chromecast build.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/2667a234cfdc5055bfa58dbab40f677cc35e37c5">2667a23</a></td>
+        <td class="date">2014-08-15</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Chromecast: Adds WebUI stubs for cast shell.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/53a8880dab8a208e21316997857243e46fa52ffc">53a8880</a></td>
+        <td class="date">2014-08-15</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Chromecast: pages default to having a black background.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/dba26a7c39247f4744151434fc985e3d73885326">dba26a7</a></td>
+        <td class="date">2014-08-15</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Adds remote devtools support to cast_shell.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/bef141591176e65b1d8da61bbdf17b591c564af8">bef1415</a></td>
+        <td class="date">2014-08-15</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Chromecast: MP2TS stream parser should always be enabled.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b9ba37e6c18154409ac586f703aeea62fd0f2bf8">b9ba37e</a></td>
+        <td class="date">2014-08-14</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Adds chromecast/tools/build to gyp_chromium paths for pymod_do_main.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/70c44063e9e882f916c74b21d42879c77c6bd1d1">70c4406</a></td>
+        <td class="date">2014-08-13</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">CastContentBrowserClient should not hold CastBrowserMainParts lifetime.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a15f8d8804334b9e6a779db9037e90c4dd8f91c0">a15f8d8</a></td>
+        <td class="date">2014-08-08</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Adds ChromecastConfig to manage cast_shell's PrefService.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/855c3bc87708a8c94cbb9a241f95e3a1bd36bf2b">855c3bc</a></td>
+        <td class="date">2014-08-08</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Chromecast shell build fix for new BrowserContext API:</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/9f13b6093d42eccd89eceab39fc2ec525aa77304">9f13b60</a></td>
+        <td class="date">2014-08-07</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Exempts chromecast/ directory from spam-logging presubmit check.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/d345593ff7f27a576526d2cbeb4de6e4c0cb974f">d345593</a></td>
+        <td class="date">2014-07-31</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Generates Chromecast User-Agent string from current Chromium version.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/313c692bcc6dd958a9e0e2783c0bc7ace75aaa74">313c692</a></td>
+        <td class="date">2014-07-18</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Removes CastBrowserMainParts::GetInstance.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/1ebdce33eb48b7e40aba0f15ead4797cf4cbb987">1ebdce3</a></td>
+        <td class="date">2014-07-17</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Moves components/metrics/chromeos to c/m/serialization/.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/791733d3dbc0dc80ba00b70a8c18ebaf2c2af812">791733d</a></td>
+        <td class="date">2014-07-17</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Build-level separation of default CastService implementation.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/84520e55f3c531317ca6142d81f330e3cef363e6">84520e5</a></td>
+        <td class="date">2014-07-17</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Fixes chromecast build to point to ui/resources and ui/strings.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/5d96cf4477f005979fa9656f4f67bf6f5eb65f33">5d96cf4</a></td>
+        <td class="date">2014-07-17</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Adds gunsch@ to chromecast OWNERS.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a6e21c3757041318842551c50192558fe997846b">a6e21c3</a></td>
+        <td class="date">2014-07-12</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Ties RenderFrameImpl VIDEO_HOLE observer to lifetime of RenderWidget.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/3bafa52145ee466fc5899ed519ceccecb691487e">3bafa52</a></td>
+        <td class="date">2014-04-30</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">HttpServer: avoid DCHECK'ing on non-HTTP/1.1 requests.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a60c649c9e09ff85b22fd7cec615b699bc9dc24b">a60c649</a></td>
+        <td class="date">2014-04-28</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Fixes flaky HttpServer.SendRaw failures.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/7b691d3fee8d10f130007016caefa0c6c6cd0681">7b691d3</a></td>
+        <td class="date">2014-04-22</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Fixes WebMediaPlayerAndroid to respect infinite-duration media streams.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/a6948f9e9e6323d5325841862867e66a3a6f5f6e">a6948f9</a></td>
+        <td class="date">2014-04-19</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">HttpServer: allows sending raw response data for streamed responses.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/4203d8d5d1e49d6b018e2391435baa3b764d4092">4203d8d</a></td>
+        <td class="date">2014-04-15</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">HttpServer: allows sending raw response data for nontypical responses.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/b9e0d854fe3824ffe84895e3b26bdcea883cb2ea">b9e0d85</a></td>
+        <td class="date">2014-04-08</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Removes "copy" action for extra_native_libs in java_apk.gypi.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/6b40f3790839b3822aecd0547f80fb2440926507">6b40f37</a></td>
+        <td class="date">2014-04-03</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Adds extra header data for Android AAC playback when decoding MPEG2TS.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/8063669f347df6f9a08e41f8b9e1fbe94c3720af">8063669</a></td>
+        <td class="date">2014-04-01</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Adds GYP variable to enable MPEG2TS stream parsing.</td>
+      </tr>
+      
+  
+      <tr>
+        <td class="link"><a href="https://chromium.googlesource.com/chromium/src.git/+/0cbc29bd2b89d1cfd81ef075860e8383c62a4bf4">0cbc29b</a></td>
+        <td class="date">2014-03-20</td>
+        <td class="author">gunsch@chromium.org</td>
+        <td class="subject">Gets the peer address (if available) in server requests.</td>
+      </tr>
+      
+    </table>
+  </div>
+  
