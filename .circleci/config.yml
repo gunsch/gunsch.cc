@@ -5,6 +5,8 @@ workflows:
       - build:
           context:
             - Everything
+orbs:
+  ruby: circleci/ruby@2.1.0
 jobs:
   build:
     machine:
@@ -13,17 +15,9 @@ jobs:
       - checkout
 
       # Do Ruby-based setup
-      - restore_cache:
-          keys:
-            - rubygems-v1-{{ checksum "Gemfile.lock" }}
-            - rubygems-v1-fallback
-      - run:
-          name: Bundle Install
-          command: bundle check || bundle install
-      - save_cache:
-          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
+      - ruby/install:
+          version: '3.2.2'
+      - ruby/install-deps
 
       # Do the actual build!
       - run:
