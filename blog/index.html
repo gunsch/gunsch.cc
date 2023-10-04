@@ -13,23 +13,24 @@ title: "Andrew Gunsch"
   <div class="section">
     <div class="section-title">Work</div>
     <p>
-      I've spent my career working in software, largely on web-based projects with
-      an emphasis on web security, and a habit of being drawn into platforms.
+      I've spent my career building software, usually web-based projects with
+      an emphasis on web security, with a habit of ending up platforms.
     </p>
     <p>
-      I'm currently in the civic tech space, working with
-      <a href="https://adhocteam.us">Ad Hoc</a> to improve the user experience and
-      technical implementation of government websites for public services. Come join us!
-    </p>
-    <p>
-      Before Ad Hoc, I worked on a variety of engineering projects across Google.
+      I'm currently taking a sabbatical between jobs, but open to opportunities in 2024,
+      especially engineering management roles for platform teams. <a href="https://www.linkedin.com/in/andrew-gunsch-267b2338">Say hi on LinkedIn</a>!
     </p>
     <p>Writings:</p>
     <ul>
-      <li><a href="https://adhoc.team/2022/06/13/building-blocks-of-platforms/">The building blocks of platforms</a></li>
-      <li><a href="https://adhoc.team/2022/06/27/human-centered-governance-platform-adoption/">Human-centered governance for platform adoption</a></li>
-      <li><a href="https://adhoc.team/2022/06/30/carrots-sticks-of-platform-governance/">The carrots and sticks of platform governance</a></li>
-      <li><a href="https://adhoc.team/2023/05/31/creating-a-platform-for-employee-internal-apps-with-gcp/">Creating a platform for employee-internal apps with GCP</a></li>
+      {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y" }})
+      </li>
+      {% endfor %}
+      <li><a href="https://adhoc.team/2022/06/13/building-blocks-of-platforms/">The building blocks of platforms</a> (Ad Hoc, 2022)</li>
+      <li><a href="https://adhoc.team/2022/06/27/human-centered-governance-platform-adoption/">Human-centered governance for platform adoption</a> (Ad Hoc, 2022)</li>
+      <li><a href="https://adhoc.team/2022/06/30/carrots-sticks-of-platform-governance/">The carrots and sticks of platform governance</a> (Ad Hoc, 2022)</li>
+      <li><a href="https://adhoc.team/2023/05/31/creating-a-platform-for-employee-internal-apps-with-gcp/">Creating a platform for employee-internal apps with GCP</a> (Ad Hoc, 2023)</li>
     </ul>
     <p>Speakings:</p>
     <ul>
