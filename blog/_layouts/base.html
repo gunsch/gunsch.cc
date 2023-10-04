@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Andrew Gunsch, colorful weirdo.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+
+  <!--
+    TODO:
+    1) Embedded web fonts
+    2) Inline everything?
+    3) Serve assets cookieless and cached from assets.qxlp.net?
+       (something similar to uptmp maybe)
+    4) Effect with the image
+    5) Update icons to be depth-y buttons?
+  -->
+</head>
+
+<body>
+  <div class="stripe-wrapper">
+    <div class="wrapper">
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

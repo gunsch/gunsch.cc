@@ -85,26 +85,67 @@ $num_icons: 6;
   padding: 8px 20px 20px 20px;
 
   .title {
-    cursor: pointer;
     font-size: 28pt;
     font-weight: 800;
     margin-bottom: 8px;
     min-height: 32px;
     text-align: center;
-    &:hover { color: #333; }
+
+    a {
+      text-decoration: none;
+    }
   }
 
   .section:nth-child(1) .section-title { background-color: $theme_pink; }
   .section:nth-child(2) .section-title { background-color: $theme_yellow; }
   .section:nth-child(3) .section-title { background-color: $theme_blue; }
 
-  .section-title {
+  /* Rotate between pink -> yellow -> blue headings */
+  h1:nth-of-type(3n + 1) { background-color: $theme_pink; }
+  h1:nth-of-type(3n + 2) { background-color: $theme_yellow; }
+  h1:nth-of-type(3n + 3) { background-color: $theme_blue; }
+
+  .section-title, h1 {
     color: #fff;
     font-size: 20pt;
     font-weight: 800;
     padding: 2px 8px;
   }
 
+  /* blog pages */
+  .post-content {
+    max-width: 800px;
+
+    blockquote {
+      border-left: 4px solid $theme_yellow;
+      margin: 0;
+      padding-inline-start: 1em;
+      padding-inline-end: 1em;
+    }
+
+    .post-title {
+      font-size: 24pt;
+      font-weight: 800;
+      line-height: 1.4em;
+    }
+
+    .post-date {
+      color: #666;
+    }
+
+    .post-divider {
+      border-bottom: 4px solid $theme_blue;
+      margin: 8px 0;
+    }
+
+    .end-matter {
+      .home-link {
+        text-align: center;
+      }
+    }
+  }
+
+  /* non-blog pages */
   .content {
     display: flex;
     flex-direction: row-reverse;
