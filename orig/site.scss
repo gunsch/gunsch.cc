@@ -1,0 +1,139 @@
+/** Main body **/
+
+$theme_pink: #d62770;
+$theme_yellow: #ffc60d;
+$theme_blue: #176de6;
+$theme_black: #000;
+$theme_white: #fff;
+
+body {
+  color: #333;
+  display: flex;
+  font-family: "Catamaran";    
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) { 
+  body {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 900px) { 
+  .stripe-wrapper {
+    margin-top: 8px;
+  }
+}
+
+.stripe-wrapper {
+  $stripe_width: 100px;
+
+  background: repeating-linear-gradient(
+    135deg,
+    $theme_pink,
+    $theme_pink $stripe_width,
+    $theme_yellow $stripe_width,
+    $theme_yellow $stripe_width * 2,
+    $theme_blue $stripe_width * 2,
+    $theme_blue $stripe_width * 3,
+  );
+}
+
+.wrapper {
+  /* Visually this creates a 16px striped border all the way around, but
+     there seems to be an unexplained extra 4px at the top. */
+  padding: 12px 16px 16px 16px;
+}
+
+a {
+  color: #000;
+}
+
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 400;
+  src: url("font/catamaran-v6-latin-regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 800;
+  src: url("font/catamaran-v6-latin-800.woff") format('woff');
+}
+
+
+$grid_icon_size: 64px;
+$grid_padding: 10px;
+$grid_size: ($grid_icon_size + $grid_padding);
+$num_icons: 6;
+
+.inline-icon {
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 14px;
+}
+
+.container {
+  background-color: $theme_white;
+  display: flex;
+  flex-direction: column;
+  margin: 4px auto 0 auto;
+  padding: 8px 20px 20px 20px;
+
+  .title {
+    cursor: pointer;
+    font-size: 28pt;
+    font-weight: 800;
+    margin-bottom: 8px;
+    min-height: 32px;
+    text-align: center;
+    &:hover { color: #333; }
+  }
+
+  .section:nth-child(1) .section-title { background-color: $theme_pink; }
+  .section:nth-child(2) .section-title { background-color: $theme_yellow; }
+  .section:nth-child(3) .section-title { background-color: $theme_blue; }
+
+  .section-title {
+    color: #fff;
+    font-size: 20pt;
+    font-weight: 800;
+    padding: 2px 8px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .photo {
+      border: 8px solid #fff;
+      border-radius: 16px;
+      margin-left: $grid_padding;
+      width: 270px;
+    }
+    
+    .photo-caption {
+      text-align: center;
+      font-size: 10pt;
+    }
+
+    .text-container {
+      max-width: 500px;
+    }
+
+  }
+}
+
+p + ul {
+  margin-top: -1em;
+}
+
+hr {
+  border: none;
+  background: gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#efefef), to(#fff));
+  height: 1px;
+}
