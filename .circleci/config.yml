@@ -8,11 +8,11 @@ workflows:
 orbs:
   node: circleci/node@3.0.0
 jobs:
- build:
-  docker:
+  build:
+    docker:
     - image: cimg/ruby:2.7.4
-   steps:
-     - checkout
+    steps:
+      - checkout
 
       # Do Ruby-based setup
       - restore_cache:
@@ -37,8 +37,8 @@ jobs:
           name: Docker build
           command: docker build --pull --rm -f "Dockerfile" -t gunsch.cc:latest "."
 
-     # Use GitHub PAT to auth to GitHub Packages, then tag and push!
-     - run: |
+      # Use GitHub PAT to auth to GitHub Packages, then tag and push!
+      - run: |
          echo "$GITHUB_TOKEN" | docker login https://docker.pkg.github.com --username gunsch --password-stdin
          TAG=0.1.$CIRCLE_BUILD_NUM
          docker tag gunsch.cc:latest docker.pkg.github.com/gunsch/gunsch.cc/gunschcc-$CIRCLE_BRANCH:$TAG
