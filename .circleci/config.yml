@@ -5,12 +5,10 @@ workflows:
       - build:
           context:
             - Everything
-orbs:
-  node: circleci/node@3.0.0
 jobs:
   build:
     docker:
-    - image: cimg/ruby:2.7.4
+    - image: cimg/ruby:3.2.2
     steps:
       - checkout
 
