@@ -9,16 +9,33 @@ orbs:
   node: circleci/node@3.0.0
 jobs:
  build:
-   machine:
-     image: ubuntu-2004:202111-02
+  docker:
+    - image: cimg/ruby:2.7.4
    steps:
      - checkout
 
-     # Install packages (`npm ci` under the hood)
-     - node/install-packages
+      # Do Ruby-based setup
+      - restore_cache:
+          keys:
+            - rubygems-v1-{{ checksum "Gemfile.lock" }}
+            - rubygems-v1-fallback
+      - run:
+          name: Bundle Install
+          command: bundle check || bundle install
+      - save_cache:
+          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
 
-     # Do the actual build!
-     - run: ./build.sh
+      # Do the actual build!
+      - run:
+          name: Jekyll build
+          command: bundle exec jekyll build
+
+      # Create the Docker image
+      - run:
+          name: Docker build
+          command: docker build --pull --rm -f "Dockerfile" -t gunsch.cc:latest "."
 
      # Use GitHub PAT to auth to GitHub Packages, then tag and push!
      - run: |
