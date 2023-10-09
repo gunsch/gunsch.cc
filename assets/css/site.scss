@@ -123,6 +123,11 @@ $num_icons: 6;
       padding-inline-end: 1em;
     }
 
+    hr {
+      border-bottom: 2px solid;
+      background-color: $theme_pink;
+    }
+
     .post-title {
       font-size: 24pt;
       font-weight: 800;
@@ -139,8 +144,29 @@ $num_icons: 6;
     }
 
     .end-matter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .next-link, .prev-link {
+        flex: 1;
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+        min-width: 0;
+        overflow: hidden;
+      }
+
+      .next-link {
+        margin-right: 12px;
+      }
+
       .home-link {
         text-align: center;
+      }
+
+      .prev-link {
+        margin-left: 12px;
+        text-align: right;
       }
     }
   }

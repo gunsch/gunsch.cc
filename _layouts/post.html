@@ -13,7 +13,17 @@ layout: base
 
   <div class="post-divider"></div>
   <div class="end-matter">
+    <div class="next-link">
+      {% if page.next.url %}
+        <a href="{{page.next.url}}">&laquo; {{page.next.title}}</a>
+      {% endif %}
+    </div>
     <div class="home-link"><a href="/">Andrew Gunsch</a></div>
+    <div class="prev-link">
+      {% if page.previous.url %}
+        <a href="{{page.previous.url}}">{{page.previous.title}} &raquo;</a>
+      {% endif %}
+    </div>
   </div>
 
 </div>
