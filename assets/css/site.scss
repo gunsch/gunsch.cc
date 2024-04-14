@@ -55,12 +55,14 @@ a {
 @font-face {
   font-family: "Catamaran";
   font-weight: 400;
+  font-display: swap;
   src: url("/assets/font/catamaran-v6-latin-regular.woff") format('woff');
 }
 
 @font-face {
   font-family: "Catamaran";
   font-weight: 800;
+  font-display: swap;
   src: url("/assets/font/catamaran-v6-latin-800.woff") format('woff');
 }
 
@@ -97,7 +99,7 @@ $num_icons: 6;
   }
 
   .section:nth-child(1) .section-title { background-color: $theme_pink; }
-  .section:nth-child(2) .section-title { background-color: $theme_yellow; }
+  .section:nth-child(2) .section-title { background-color: $theme_yellow; -webkit-text-stroke: 1px #666; }
   .section:nth-child(3) .section-title { background-color: $theme_blue; }
 
   /* Rotate between pink -> yellow -> blue headings */
@@ -202,6 +204,7 @@ $num_icons: 6;
       border: 8px solid #fff;
       border-radius: 16px;
       margin-left: $grid_padding;
+      height: 360px;
       width: 270px;
     }
     
