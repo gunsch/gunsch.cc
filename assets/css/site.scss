@@ -143,17 +143,37 @@ $num_icons: 6;
       margin: 8px 0;
     }
 
+    .image-row-2 img, .image-row-2 video {
+      max-width: calc(50vw - 50px);
+      height: auto;
+    }
+
+    .image-row-3 img, .image-row-3 video {
+      max-width: calc(33vw - 35px);
+      height: auto;
+    }
+
+    .image-row-4 img, .image-row-4 video {
+      max-width: calc(50vw - 50px);
+      height: auto;
+    }
+
     .end-matter {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
 
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+      }
+
       .next-link, .prev-link {
         flex: 1;
         text-overflow: ellipsis;
         text-wrap: nowrap;
-        min-width: 0;
         overflow: hidden;
+        min-width: 0;
+        max-width: calc(95vw - 65px);
       }
 
       .next-link {
