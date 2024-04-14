@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I took a 10-month sabbatical, here's how it went"
+title: "I took a 10-month sabbatical"
 image: 2024-04/music-setup.jpg
 tags: personal
 date: 2024-04-06 14:40 -0800
