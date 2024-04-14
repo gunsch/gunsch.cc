@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "I took a 10-month sabbatical, here's how it went"
+image: /assets/img/posts/2024-04/snoo.jpg
 tags: personal
+date: 2024-04-06 14:40 -0800
 ---
 
 ***Synopsis**: I took a 10-month sabbatical between tech jobs. Here's how it went for me, and what worked and didn't!*
