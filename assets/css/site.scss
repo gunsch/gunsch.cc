@@ -145,6 +145,11 @@ $num_icons: 6;
       margin: 8px 0;
     }
 
+    .image-row-1 img, .image-row-1 video {
+      max-width: calc(100vw - 50px);
+      height: auto;
+    }
+
     .image-row-2 img, .image-row-2 video {
       max-width: calc(50vw - 50px);
       height: auto;
