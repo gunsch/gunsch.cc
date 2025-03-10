@@ -8,6 +8,7 @@ github_username: gunsch
 
 # Build settings
 plugins:
+  - jekyll-cache-bust
   - jekyll-compress-images
   - jekyll-feed
 

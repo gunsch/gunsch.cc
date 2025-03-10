@@ -50,6 +50,8 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-cache-bust (0.0.1)
+      jekyll (>= 3.6, < 5.0)
     jekyll-compress-images (1.2)
       image_optim
       image_optim_pack
@@ -92,10 +94,12 @@ GEM
 
 PLATFORMS
   arm64-darwin-23
+  arm64-darwin-24
   x86_64-linux
 
 DEPENDENCIES
   jekyll (~> 4.3.2)
+  jekyll-cache-bust
   jekyll-compress-images
   jekyll-feed (~> 0.12)
 

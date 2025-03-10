@@ -11,6 +11,7 @@ gem "jekyll", "~> 4.3.2"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "jekyll-cache-bust"
   gem "jekyll-compress-images"
   gem "jekyll-feed", "~> 0.12"
 end
