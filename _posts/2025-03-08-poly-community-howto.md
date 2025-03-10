@@ -149,7 +149,7 @@ I included our group’s stated values above in our Charter, but there were a fe
 
 **Community, not meetup**
 
-If you’ve had the same experiences I have at [Meetup.com](http://Meetup.com) events, they often feel like a bunch of strangers in a room, rather than a *community*. There’s no underlying social cohesion or trust when most people in a room don’t know each other, even if you’ve gathered around a common hobby or identity. And without social cohesion, the vibes tend to be awkward! I don’t know why [Meetup](http://Meetup.com).com groups tend to feel like this, but anecdotally everyone I’ve spoken to has had an experience like that.
+If you’ve had the same experiences I have at Meetup.com events, they often feel like a bunch of strangers in a room, rather than a *community*. There’s no underlying social cohesion or trust when most people in a room don’t know each other, even if you’ve gathered around a common hobby or identity. And without social cohesion, the vibes tend to be awkward! I don’t know why Meetup.com groups tend to feel like this, but anecdotally everyone I’ve spoken to has had an experience like that.
 
 One of our main goals was to create a sense of *community*: a social cohesion and trust built out of longstanding relationships, a place where people get to know each other more than once, where they build friendship bonds and *keep coming back* for those bonds.
 
